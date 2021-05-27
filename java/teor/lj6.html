@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Язык JavaScript. Урок №6</title>
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .btn-top {
+            padding: 20px;
+            background-color: #e1dcce;
+            border-radius: 100%;
+        }
+
+        .btn-top span {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top main-color">
+            <div class="container">
+
+
+                <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/logo.png" /><span
+                        class="hading">B8te: Code</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html"> <i class="material-icons">
+                                    home
+                                </i>Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    menu_book
+                                </i>Языки программирования
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/c/teor/lc1.html">HTML + CSS</a>
+                                <a class="dropdown-item" href="/java/teor/lj1.html">JavaScript</a>
+                                <a class="dropdown-item" href="/python/teor/lp1.html">Python</a>
+                                <a class="dropdown-item" href="/swift/teor/ls1.html">PHP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#">Информация<span class="sr-only">(current)</span></a> -->
+                            <a class="nav-link" href="../../login.html"><i class="material-icons">
+                                    account_box
+                                </i>Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container margin-top-100">
+            <div class="item">
+                <div class="content-l text-l">
+                    <h3 class="text-center"> Язык JavaScript</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Теория
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../teor/lj1.html">Урок №1. Введение в JavaScript</a>
+                                    <a class="gg" href="../teor/lj2.html">Урок №2. Привет, мир!</a>
+                                    <a class="gg" href="../teor/lj3.html">Урок №3. Структура кода</a>
+                                    <a class="gg" href="../teor/lj4.html">Урок №4. Строгий режим - "use strict"</a>
+                                    <a class="gg" href="../teor/lj5.html">Урок №5. Переменные</a>
+                                    <a class="gg">Урок №6. Типы данных</a>
+                                    <a class="gg" href="../teor/lj7.html">Урок №7. Логические операторы</a>
+                                    <a class="gg" href="../teor/lj8.html">Урок №8. Циклы for и while</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Практика
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse collapsed" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../prac/pj1.html">Тест №1</a>
+                                    <a class="gg" href="../prac/pj2.html">Тест №2</a>
+                                    <a class="gg" href="../prac/pj3.html">Тест №3</a>
+                                    <a class="gg" href="../prac/pj4.html">Тест №4</a>
+                                    <a class="gg" href="../prac/pj5.html">Тест №5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Контроль
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse collapsed" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../kr/kj.html">Задания для выполнения</a>
+                                    <a class="gg" href="../kr/zakluchenie_java.html">Заключение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-l text-r">
+                    <h1 class="">Урок №6. Типы данных</h1>
+                    <p class="info">
+                        Значение в JavaScript всегда относится к данным определённого типа. Например, это может быть
+                        строка или число.
+                        <br><br>
+                        Есть восемь основных типов данных в JavaScript. В этой главе мы рассмотрим их в общем, а в
+                        следующих главах поговорим подробнее о каждом.
+                        <br><br>
+                        Переменная в JavaScript может содержать любые данные. Языки программирования, в которых такое
+                        возможно, называются «динамически типизированными». Это значит, что типы данных есть, но
+                        переменные не привязаны ни к одному из них.
+                    </p>
+                    <h3>Число</h3>
+                    <p class="info">
+                        Числовой тип данных (number) представляет как целочисленные значения, так и числа с плавающей
+                        точкой.
+                        <br><br>
+                        Существует множество операций для чисел, например, умножение *, деление /, сложение +, вычитание
+                        - и так далее.
+                        <br><br>
+                        Кроме обычных чисел, существуют так называемые «специальные числовые значения», которые
+                        относятся к этому типу данных: Infinity и NaN.
+                        <br><br>
+                        <b>Infinity</b> представляет собой математическую бесконечность ∞. Это особое значение, которое
+                        больше любого числа.
+                        <br>
+                        <b>NaN</b> означает вычислительную ошибку. Это результат неправильной или неопределённой
+                        математической
+                        операции.
+                    </p>
+                    <br>
+                    <p class="warning">
+                        <b>Математические операции – безопасны</b>
+                        <br>
+                        Математические операции в JavaScript «безопасны». Мы можем делать что угодно: делить на ноль,
+                        обращаться с нечисловыми строками как с числами и т.д.
+                        <br><br>
+                        Скрипт никогда не остановится с фатальной ошибкой (не «умрёт»). В худшем случае мы получим NaN
+                        как результат выполнения.
+                    </p>
+                    <h3>Строка</h3>
+                    <p class="info">
+                        Строка (string) в JavaScript должна быть заключена в кавычки.
+                    </p>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="type string"
+                        src="https://codepen.io/B8te/embed/wvJdXqQ?height=265&theme-id=dark&default-tab=js,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/wvJdXqQ'>type string</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <p class="info">
+                        В JavaScript существует три типа кавычек.
+                        <br><br>
+                        <b>Двойные кавычки: "Привет".
+                            <br>
+                            Одинарные кавычки: 'Привет'.
+                            <br>
+                            Обратные кавычки: `Привет`.</b>
+                        <br><br>
+                        Двойные или одинарные кавычки являются «простыми», между ними нет разницы в JavaScript.
+                        <br><br>
+                        Обратные же кавычки имеют расширенную функциональность. Они позволяют нам встраивать выражения в
+                        строку, заключая их в ${…}.
+                    </p>
+                    <p class="warning">
+                        <b>Нет отдельного типа данных для одного символа.</b>
+                        <br><br>
+                        В некоторых языках, например C и Java, для хранения одного символа, например "a" или "%",
+                        существует отдельный тип. В языках C и Java это char.
+                        <br><br>
+                        В JavaScript подобного типа нет, есть только тип string. Строка может содержать ноль символов
+                        (быть пустой), один символ или множество.
+                    </p>
+                    <h3>Булевый (логический) тип</h3>
+                    <p class="info">
+                        Булевый тип (boolean) может принимать только два значения: true (истина) и false (ложь).
+                        <br><br>
+                        Такой тип, как правило, используется для хранения значений да/нет: true значит «да, правильно»,
+                        а false значит «нет, не правильно».
+                        <br><br>
+                        Например:
+                    </p>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="boolean type"
+                        src="https://codepen.io/B8te/embed/NWpjBxW?height=265&theme-id=dark&default-tab=js,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/NWpjBxW'>boolean type</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <h3>Значение «null»</h3>
+                    <p class="info">
+                        Специальное значение null не относится ни к одному из типов, описанных выше.
+                        <br><br>
+                        Оно формирует отдельный тип, который содержит только значение null:
+                        <br><br>
+                        <b>let age = null;</b>
+                        <br><br>
+                        В JavaScript null не является «ссылкой на несуществующий объект» или «нулевым указателем», как в
+                        некоторых других языках.
+                        <br><br>
+                        Это просто специальное значение, которое представляет собой «ничего», «пусто» или «значение
+                        неизвестно».
+                        <br><br>
+                        В приведённом выше коде указано, что значение переменной age неизвестно.
+                    </p>
+                    <br>
+                    <h3>Значение «undefined»</h3>
+                    <p class="info">
+                        Специальное значение undefined также стоит особняком. Оно формирует тип из самого себя так же,
+                        как и null.
+                        <br><br>
+                        Оно означает, что «значение не было присвоено».
+                        <br><br>
+                        Если переменная объявлена, но ей не присвоено никакого значения, то её значением будет
+                        undefined:
+                    </p>
+                    <br>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="undefined type"
+                        src="https://codepen.io/B8te/embed/mdWmjPv?height=265&theme-id=dark&default-tab=js,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/mdWmjPv'>undefined type</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <h3>Объекты и символы</h3>
+                    <p class="info">
+                        Тип object (объект) – особенный.
+                        <br><br>
+                        Все остальные типы называются «примитивными», потому что их значениями могут быть только простые
+                        значения (будь то строка, или число, или что-то ещё). В объектах же хранят коллекции данных или
+                        более сложные структуры.
+                        <br><br>
+                        Объекты занимают важное место в языке и требуют особого внимания. Мы разберёмся с ними в главе
+                        Объекты после того, как узнаем больше о примитивах.
+                        <br><br>
+                        Тип symbol (символ) используется для создания уникальных идентификаторов в объектах. Мы
+                        упоминаем здесь о нём для полноты картины, изучим этот тип после объектов.
+                    </p>
+                    <br><br>
+                    <h3>Итого</h3>
+                    <p class="info">
+                        В JavaScript есть 7 основных типов.
+                        <br><br>
+                        <b>number</b> для любых чисел: целочисленных или чисел с плавающей точкой; целочисленные значения
+                        ограничены диапазоном ±(253-1).
+                        <br>
+                        <b>string</b> для строк. Строка может содержать ноль или больше символов, нет отдельного символьного
+                        типа.
+                        <br>
+                        <b>boolean</b> для true/false.
+                        <br>
+                        <b>null</b> для неизвестных значений – отдельный тип, имеющий одно значение null.
+                        <br>
+                        <b>undefined</b> для неприсвоенных значений – отдельный тип, имеющий одно значение undefined.
+                        <br>
+                        <b>object</b> для более сложных структур данных.
+                        <br>
+                        <b>symbol</b> для уникальных идентификаторов.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-around mt-5">
+            <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../c/teor/lc1.html">
+                <i class="material-icons">
+                    arrow_back
+                </i> Раздел HTML+CSS
+            </a>
+            <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="lj5.html">
+                <i class="material-icons">
+                    arrow_back
+                </i> Предыдущий урок
+            </a>
+            <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../index.html">
+                На главную
+            </a>
+            <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/lj7.html">
+                Следующий урок
+                <i class="material-icons">
+                    arrow_forward
+                </i>
+            </a>
+            <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../python/teor/lp1.html">
+                Раздел Python
+                <i class="material-icons">
+                    arrow_forward
+                </i>
+            </a>
+        </div>
+
+        </div>
+
+    </main>
+    <a class="btn-top hide" href="#" onclick="return up()" style="position: fixed; bottom: 50px; right: 50px;"><span
+            class="material-icons">
+            arrow_upward
+        </span></a>
+    <footer>
+        <a href="https://metanit.com/" class="btn btn-outline-primary mr-3"> metanit.com</a>
+        <a href="https://learn.javascript.ru/" class="btn btn-outline-primary">learn.javascript.ru</a>
+        <a href="https://vertex-academy.com/" class="btn btn-outline-primary">vertex-academy.com</a>
+    </footer>
+    <script src="../../js/scrollTop14.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

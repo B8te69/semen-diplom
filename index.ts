@@ -1,1 +1,0 @@
-console.log('spat hoc1)

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Язык Python. Урок №15</title>
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .hide {
+            display: none;
+        }
+        
+        .show {
+            display: block;
+        }
+        
+        .btn-top {
+            padding: 20px;
+            background-color: #e1dcce;
+            border-radius: 100%;
+        }
+        
+        .btn-top span {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top main-color">
+            <div class="container">
+
+
+                <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/logo.png" /><span
+                        class="hading">B8te: Code</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html"> <i class="material-icons">
+                                    home
+                                </i>Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    menu_book
+                                </i>Языки программирования
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/c/teor/lc1.html">HTML + CSS</a>
+                                <a class="dropdown-item" href="/java/teor/lj1.html">JavaScript</a>
+                                <a class="dropdown-item" href="/python/teor/lp1.html">Python</a>
+                                <a class="dropdown-item" href="/swift/teor/ls1.html">PHP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#">Информация<span class="sr-only">(current)</span></a> -->
+                            <a class="nav-link" href="../../login.html"><i class="material-icons">
+                                    account_box
+                                </i>Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container margin-top-100">
+            <div class="item">
+                <div class="content-l text-l">
+                    <h3 class="text-center"> Язык Python</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Теория
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="lp1.html">Урок №1. Возможности языка Python</a>
+                                    <a class="gg" href="lp2.html">Урок №2. Загрузка и установка Python</a>
+                                    <a class="gg" href="lp3.html">Урок №3. Первая программа</a>
+                                    <a class="gg" href="lp4.html">Урок №4. Синтаксис</a>
+                                    <a class="gg" href="lp5.html">Урок №5. Оператор if</a>
+                                    <a class="gg" href="lp6.html">Урок №6. Циклы</a>
+                                    <a class="gg" href="lp7.html">Урок №7. Ключевые слова, встроенные функции</a>
+                                    <a class="gg" href="lp8.html">Урок №8. Числа</a>
+                                    <a class="gg" href="lp9.html">Урок №9. Массивы</a>
+                                    <a class="gg" href="lp10.html">Урок №10. Индексы и срезы</a>
+                                    <a class="gg" href="lp11.html">Урок №11. Кортежи</a>
+                                    <a class="gg" href="lp12.html">Урок №12. Словари</a>
+                                    <a class="gg" href="lp13.html">Урок №13. Множества</a>
+                                    <a class="gg" href="lp14.html">Урок №14. Функции</a>
+                                    <a class="gg">Урок №15. Исключения и их обработка</a>
+                                    <a class="gg" href="lp16.html">Урок №16. Байтовые строки</a>
+                                    <a class="gg" href="lp17.html">Урок №17. Файлы</a>
+                                    <a class="gg" href="lp18.html">Урок №18. Документирование кода</a>
+                                    <a class="gg" href="lp19.html">Урок №19. Создание и подключение модулей</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Практика
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse collapsed" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../prac/pp1.html">Тест №1</a>
+                                    <a class="gg" href="../prac/pp2.html">Тест №2</a>
+                                    <a class="gg" href="../prac/pp3.html">Тест №3</a>
+                                    <a class="gg" href="../prac/pp4.html">Тест №4</a>
+                                    <a class="gg" href="../prac/pp5.html">Тест №5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Контроль
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse collapsed" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../kr/kp.html">Контрольная работа №1</a>
+                                    <a class="gg" href="../kr/kp2.html">Контрольная работа №2</a>
+                                    <a class="gg" href="../kr/zakl_python.html">Заключение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-l text-r">
+                    <h1 class="">Урок №15. Исключения в python. Конструкция try - except для обработки исключений
+                    </h1>
+                    <br>
+                    <p class="info">Исключения (exceptions) - ещё один тип данных в python. Исключения необходимы для того, чтобы
+                    сообщать программисту об ошибках.
+                    <br><br>
+                    Самый простейший пример исключения - деление на ноль:
+                    <br><br>
+                    
+                    >>> 100 / 0
+                    <br>
+                    Traceback (most recent call last):
+                    <br>
+                    File "", line 1, in
+                    <br>
+                    100 / 0
+                    <br>
+                    ZeroDivisionError: division by zero
+                    <br>
+                    <br>
+                    Разберём это сообщение подробнее: интерпретатор нам сообщает о том, что он поймал исключение и
+                    напечатал информацию <font color=dark>Traceback (most recent call last)</font>).
+                    <br><br>
+                    Далее имя файла (<font color=dark>File ""</font>). Имя пустое, потому что мы находимся в интерактивном режиме, строка в
+                    файле (<font color=dark>line 1</font>);
+                    <br><br>
+                    Выражение, в котором произошла ошибка (<font color=dark>100 / 0</font>).
+                    <br><br>
+                    Название исключения (<font color=dark>ZeroDivisionError</font>) и краткое описание исключения (<font color=dark>division by zero</font>).
+                    <br><br>
+                    Разумеется, возможны и другие исключения:
+                    <br><br>
+                    
+                    >>> 2 + '1'
+                    <br>
+                    Traceback (most recent call last):
+                    <br>
+                    File "", line 1, in
+                    <br>
+                    2 + '1'
+                    <br>
+                    TypeError: unsupported operand type(s) for +: 'int' and 'str'
+                    <br>
+                    <br>
+                    >>> int('qwerty')
+                    <br>
+                    Traceback (most recent call last):
+                    <br>
+                    File "", line 1, in
+                    <br>
+                    int('qwerty')
+                    <br>
+                    ValueError: invalid literal for int() with base 10: 'qwerty'
+                    <br>
+                    <br>
+                    В этих двух примерах генерируются исключения TypeError и ValueError соответственно. Подсказки дают
+                    нам полную информацию о том, где порождено исключение, и с чем оно связано.
+                    <br><br>
+                    Рассмотрим иерархию встроенных в python исключений, хотя иногда вам могут встретиться и другие, так
+                    как программисты могут создавать собственные исключения. Данный список актуален для python 3.3, в
+                    более ранних версиях есть незначительные изменения.
+                    <br><br>
+                    <font color=dark>BaseException</font> - базовое исключение, от которого берут начало все остальные.
+                    <br><br>
+                    <font color=dark>SystemExit</font> - исключение, порождаемое функцией sys.exit при выходе из программы.
+                    <br><br>
+                    <font color=dark>KeyboardInterrupt</font> - порождается при прерывании программы пользователем (обычно сочетанием клавиш
+                    Ctrl+C).
+                    <br><br>
+                    <font color=dark>GeneratorExit</font> - порождается при вызове метода close объекта generator.
+                    <br><br>
+                    <font color=dark>Exception</font> - а вот тут уже заканчиваются полностью системные исключения (которые лучше не трогать) и
+                    начинаются обыкновенные, с которыми можно работать.
+                    <br><br>
+                    <font color=dark>StopIteration</font> - порождается <a href="../teor/lp14.html">встроенной функцией</a> next, если в итераторе больше нет элементов.
+                    <br><br>
+                    <font color=dark>ArithmeticError</font> - арифметическая ошибка.
+                    <br><br>
+                    <font color=dark>FloatingPointError</font> - порождается при неудачном выполнении операции с плавающей запятой. На практике
+                    встречается нечасто.
+                    <br><br>
+                    <font color=dark>OverflowError</font> - возникает, когда результат арифметической операции слишком велик для представления.
+                    Не появляется при обычной работе с целыми числами (так как python поддерживает длинные числа), но
+                    может возникать в некоторых других случаях.
+                    <br><br>
+                    <font color=dark>ZeroDivisionError</font> - деление на ноль.
+                    <br><br>
+                    <font color=dark>AssertionError</font> - выражение в функции assert ложно.
+                    <br><br>
+                    <font color=dark>AttributeError</font> - объект не имеет данного атрибута (значения или метода).
+                    <br><br>
+                    <font color=dark>BufferError</font> - операция, связанная с буфером, не может быть выполнена.
+                    <br><br>
+                    <font color=dark>EOFError</font> - функция наткнулась на конец файла и не смогла прочитать то, что хотела.
+                    <br><br>
+                    <font color=dark>ImportError</font> - не удалось импортирование модуля или его атрибута.
+                    <br><br>
+                    <font color=dark>LookupError</font> - некорректный индекс или ключ.
+                    <br><br>
+                    <font color=dark>IndexError</font> - индекс не входит в диапазон элементов.
+                    <br><br>
+                    <font color=dark>KeyError</font> - несуществующий ключ (в <a href="../teor/lp12.html">словаре</a>, <a href="../teor/lp13.html">множестве</a> или другом объекте).
+                    <br><br>
+                    <font color=dark>MemoryError</font> - недостаточно памяти.
+                    <br><br>
+                    <font color=dark>NameError</font> - не найдено переменной с таким именем.
+                    <br><br>
+                    <font color=dark>UnboundLocalError</font> - сделана ссылка на локальную переменную в функции, но переменная не определена
+                    ранее.
+                    <br><br>
+                    <font color=dark>OSError</font> - ошибка, связанная с системой.
+                    <br><br>
+                    <font color=dark>>BlockingIOError</font>
+                    <br><br>
+                    <font color=dark>ChildProcessError</font> - неудача при операции с дочерним процессом.
+                    <br><br>
+                    <font color=dark>ConnectionError</font> - базовый класс для исключений, связанных с подключениями.
+                    <br><br>
+                    <font color=dark>BrokenPipeError</font>
+                    <br><br>
+                    <font color=dark>ConnectionAbortedError</font>
+                    <br><br>
+                    <font color=dark>ConnectionRefusedError</font>
+                    <br><br>
+                    <font color=dark>ConnectionResetError</font>
+                    <br><br>
+                    <font color=dark>FileExistsError</font> - попытка создания <a href="../teor/lp17.html">файла</a> или директории, которая уже существует.
+                    <br><br>
+                    <font color=dark>FileNotFoundError</font> - файл или директория не существует.
+                    <br><br>
+                    <font color=dark>InterruptedError</font> - системный вызов прерван входящим сигналом.
+                    <br><br>
+                    <font color=dark>IsADirectoryError</font> - ожидался файл, но это директория.
+                    <br><br>
+                    <font color=dark>NotADirectoryError</font> - ожидалась директория, но это файл.
+                    <br><br>
+                    <font color=dark>PermissionError</font> - не хватает прав доступа.
+                    <br><br>
+                    <font color=dark>ProcessLookupError</font> - указанного процесса не существует.
+                    <br><br>
+                    <font color=dark>TimeoutError</font> - закончилось время ожидания.
+                    <br><br>
+                    <font color=dark>ReferenceError</font> - попытка доступа к атрибуту со слабой ссылкой.
+                    <br><br>
+                    <font color=dark>RuntimeError</font> - возникает, когда исключение не попадает ни под одну из других категорий.
+                    <br><br>
+                    <font color=dark>NotImplementedError</font> - возникает, когда абстрактные методы класса требуют переопределения в дочерних
+                    классах.
+                    <br><br>
+                    <font color=dark>SyntaxError</font> - синтаксическая ошибка.
+                    <br><br>
+                    <font color=dark>IndentationError</font> - неправильные отступы.
+                    <br><br>
+                    <font color=dark>TabError</font> - смешивание в отступах табуляции и пробелов.
+                    <br><br>
+                    <font color=dark>SystemError</font> - внутренняя ошибка.
+                    <br><br>
+                    <font color=dark>TypeError</font> - операция применена к объекту несоответствующего типа.
+                    <br><br>
+                    <font color=dark>ValueError</font> - функция получает аргумент правильного типа, но некорректного значения.
+                    <br><br>
+                    <font color=dark>UnicodeError</font> - ошибка, связанная с кодированием / раскодированием unicode в строках.
+                    <br><br>
+                    <font color=dark>UnicodeEncodeError</font> - исключение, связанное с кодированием unicode.
+                    <br><br>
+                    <font color=dark>UnicodeDecodeError</font> - исключение, связанное с декодированием unicode.
+                    <br><br>
+                    <font color=dark>>UnicodeTranslateError</font> - исключение, связанное с переводом unicode.
+                    <br><br>
+                    <font color=dark>Warning</font> - предупреждение.
+                    <br><br>
+                    Теперь, зная, когда и при каких обстоятельствах могут возникнуть исключения, мы можем их
+                    обрабатывать. Для обработки исключений используется конструкция <font color=dark>try - except</font>.
+                    <br><br>
+                    Первый пример применения этой конструкции:
+                    <br><br>
+                    
+                    >>> try:
+                    <br>
+                    ... k = 1 / 0
+                    <br>
+                    ... except ZeroDivisionError:
+                    <br>
+                    ... k = 0
+                    <br>
+                    ...
+                    <br>
+                    >>> print(k)
+                    <br>
+                    0
+                    <br>
+                    <br>
+                    В блоке try мы выполняем инструкцию, которая может породить исключение, а в блоке except мы
+                    перехватываем их. При этом перехватываются как само исключение, так и его потомки. Например,
+                    перехватывая ArithmeticError, мы также перехватываем FloatingPointError, OverflowError и
+                    ZeroDivisionError.
+                    <br><br>
+                    
+                    >>> try:
+                    <br>
+                    ... k = 1 / 0
+                    <br>
+                    ... except ArithmeticError:
+                    <br>
+                    ... k = 0
+                    <br>
+                    ...
+                    <br>
+                    >>> print(k)
+                    <br>
+                    0
+                    <br>
+                    <br>
+                    Также возможна инструкция except без аргументов, которая перехватывает вообще всё (и прерывание с
+                    клавиатуры, и системный выход и т. д.). Поэтому в такой форме инструкция except практически не
+                    используется, а используется except Exception. Однако чаще всего перехватывают исключения по одному,
+                    для упрощения отладки (вдруг вы ещё другую ошибку сделаете, а except её перехватит).
+                    <br><br>
+                    Ещё две инструкции, относящиеся к нашей проблеме, это <font color=dark>finally</font> и else. Finally выполняет блок
+                    инструкций в любом случае, было ли исключение, или нет (применима, когда нужно непременно что-то
+                    сделать, к примеру, закрыть файл). Инструкция else выполняется в том случае, если исключения не
+                    было.
+                    <br><br>
+                    
+                    >>> f = open('1.txt')
+                    <br>
+                    >>> ints = []
+                    <br>
+                    >>> try:
+                    <br>
+                    ... for line in f:
+                    <br>
+                    ... ints.append(int(line))
+                    <br>
+                    ... except ValueError:
+                    <br>
+                    ... print('Это не число. Выходим.')
+                    <br>
+                    ... except Exception:
+                    <br>
+                    ... print('Это что ещё такое?')
+                    <br>
+                    ... else:
+                    <br>
+                    ... print('Всё хорошо.')
+                    <br>
+                    ... finally:
+                    <br>
+                    ... f.close()
+                    <br>
+                    ... print('Я закрыл файл.')
+                    <br>
+                    ... <em><font color=50c878># Именно в таком порядке: try, группа except, затем else, и только потом finally.</font></em>
+                    <br>
+                    ...
+                    <br>
+                    Это не число. Выходим.
+                    <br>
+                    Я закрыл файл.
+                    </p>
+                    <br>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mt-5">
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../java/teor/lj1.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Раздел Java
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/lp14.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Предыдущий урок
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../index.html">
+                    На главную
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/lp16.html">
+                    Следующий урок
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../swift/teor/ls1.html">
+                    Раздел Swift
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+    <a class="btn-top hide" href="#" onclick="return up()" style="position: fixed; bottom: 50px; right: 50px;"><span class="material-icons">
+        arrow_upward
+        </span></a>
+    <footer>
+        <a href="https://metanit.com/" class="btn btn-outline-primary mr-3"> metanit.com</a>
+        <a href="https://learn.javascript.ru/" class="btn btn-outline-primary">learn.javascript.ru</a>
+        <a href="https://vertex-academy.com/" class="btn btn-outline-primary">vertex-academy.com</a>
+    </footer>
+    <script src="../../js/scrollTop21.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

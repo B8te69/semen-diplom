@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Язык PHP. Урок №2</title>
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .btn-top {
+            padding: 20px;
+            background-color: #e1dcce;
+            border-radius: 100%;
+        }
+
+        .btn-top span {
+            font-size: 50px;
+        }
+    </style>
+    <script src="../../js/scrollTop24.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top main-color">
+            <div class="container">
+
+
+                <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/logo.png" /><span
+                        class="hading">B8te: Code</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html"> <i class="material-icons">
+                                    home
+                                </i>Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    menu_book
+                                </i>Языки программирования
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/c/teor/lc1.html">HTML + CSS</a>
+                                <a class="dropdown-item" href="/java/teor/lj1.html">JavaScript</a>
+                                <a class="dropdown-item" href="/python/teor/lp1.html">Python</a>
+                                <a class="dropdown-item" href="/swift/teor/ls1.html">PHP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#">Информация<span class="sr-only">(current)</span></a> -->
+                            <a class="nav-link" href="../../login.html"><i class="material-icons">
+                                    account_box
+                                </i>Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container margin-top-100">
+            <div class="item">
+                <div class="content-l text-l">
+                    <h3 class="text-center"> Язык PHP</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Теория
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../teor/ls1.html">Урок №1. О PHP</a>
+                                    <a class="gg">Урок №2. Синтаксис языка PHP</a>
+                                    <a class="gg" href="../teor/ls3.html">Урок №3. Массивы</a>
+                                    <a class="gg" href="../teor/ls4.html">Урок №4. Циклы</a>
+                                    <a class="gg" href="../teor/ls5.html">Урок №5. Функции</a>
+                                    <a class="gg" href="../teor/ls6.html">Урок №6. База данных</a>
+                                    <a class="gg" href="../teor/ls7.html">Урок №7. Уязвимости</a>
+                                    <a class="gg" href="../teor/ls8.html">Урок №8. Объекты и использование библиотек</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Практика
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse collapsed" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../prac/ps1.html">Тест №1</a>
+                                    <a class="gg" href="../prac/ps2.html">Тест №2</a>
+                                    <a class="gg" href="../prac/ps3.html">Тест №3</a>
+                                    <a class="gg" href="../prac/ps4.html">Тест №4</a>
+                                    <a class="gg" href="../prac/ps5.html">Тест №5</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-l text-r">
+                    <h1 class="">Урок №2. Синтаксис языка PHP</h1>
+                    <br>
+                    <p class="info">
+                        Разберёмся, из чего состоит любой язык программирования. Как и языки, на которых мы говорим,
+                        язык программирования также строится из кирпичиков, которые и составляют совокупность знаний,
+                        называемую человеческим языком.
+                        <br><br>
+                        У каждого языка есть свои правила и конструкции, следуя которым, мы выражаем свои мысли и делаем
+                        их понятными для другого человека. В программировании всё точно также. Но вместо человеческого
+                        языка мы используем язык программирования PHP, а в роли нашего собеседника выступает
+                        PHP-интерпретатор. Поэтому, чтобы выразить свою мысль, мы должны сделать её понятной для
+                        интерпретатора.
+                    </p>
+                    <br><br>
+                    <h3>Переменные</h3>
+                    <p class="info">
+                        Переменные — это основа любого языка программирования. Во время написания кода мы постоянно
+                        будем работать с переменными. Понять концепцию переменных очень просто.
+                        Переменная — это контейнер, в котором содержатся данные, так же как напиток содержится в чашке.
+                        Любую информацию, которую мы будем использовать в коде, сначала необходимо сохранить в
+                        переменной.
+                        <br><br>
+                        У переменной обязательно должно быть имя, поэтому переменная всегда состоит из имени и значения.
+                        Значение — это любая информация, которая хранится внутри переменной.
+                        <br><br>
+                        Например мы можем попросить посетителя страницы указать свой возраст, а затем использовать это
+                        значение для других целей — узнать год рождения или показать возраст самой странице.
+                    </p>
+                    <br><br>
+                    <h3>Как работать с переменными</h3>
+                    <p class="info">
+                        Любую переменную следует вначале объявить, то есть дать ей имя и присвоить значение.
+                        В синтаксисе PHP имя переменной записывается латинскими символами, но первым символом всегда
+                        должен быть знак доллара $, а затем идёт имя.
+                        <br>
+                        Не допускается начинать имя переменной с цифры, а также использовать любые значения, кроме букв
+                        алфавита и знака подчеркивания.
+                        Примеры допустимых имён переменных:
+                        <br><br><b>
+                            $age;
+                            <br>
+                            $favorite_color;
+                            <br>
+                            $name2.
+                        </b><br><br>
+                        Примеры недопустимых имён:
+                        <br><br><b>
+                            age — забыт знак доллара в начале;
+                            <br>
+                            $42 — начинается с цифры;
+                            <br>
+                            $my-age — содержит дефис.
+                        </b><br><br>
+                    </p>
+                    <br><br>
+                    <h3>Присваивание</h3>
+                    <p class="info">
+                        Пустая переменная не будет слишком полезна. Поэтому давайте сразу что-нибудь туда поместим.
+                        Такое действие называется операцией присваивания.
+                        Вот как выглядит присваивание информации в новую переменную:
+                        <br><br>
+                        $favorite_color = "green";
+                        <br><br>
+                        Знак “равно” в PHP является оператором и всегда означает операцию присваивания.
+                        Здесь мы записали слово “green” в переменную под именем favorite_color.
+                        Обратите внимание: мы взяли в кавычки слово green. Кавычки всегда строго необходимы, если речь
+                        идёт об использовании текста. Но если в переменную помещается не текст, а число, то кавычки не
+                        нужны.
+                        <br>
+                        Пример:
+                        <br><br>
+                        $favorite_number = 42;
+                    </p>
+                    <br><br>
+                    <h3>Использование</h3>
+                    <p class="info">
+                        Мы научились сохранять информацию в переменных. Теперь посмотрим, как получить доступ к этой
+                        информации в нашем сценарии.
+                        Ведь когда мы пытаемся запомнить в своей голове новый телефонный номер, то делаем это не просто
+                        так, а для чтобы на него позвонить.
+                        Это значит, что мы запоминаем информацию с целью вернуться к ней в дальнейшем и применить для
+                        какого-то действия — совершить звонок, написать сообщение и тому подобное.
+                        <br><br>
+                        Такая логика полностью работает и в программировании. Сохранив информацию однажды, её можно
+                        использовать в дальнейшем для выполнения различных действий. Таким действием может быть вывод
+                        этой информации на экран.
+                        Перепишем уже знакомый сценарий так, чтобы в нём использовались переменные.
+                        <br><br>
+                        <b>&lt;?php
+                            <br>
+                            $welcome_text = "Привет, мир";
+                            <br>
+                            print($welcome_text);</b>
+                        <br><br>
+                        Теперь этот простой сценарий состоит из двух шагов. На первом мы объявляем (инициализируем)
+                        новую переменную и помещаем туда текст. На втором шаге мы используем эту переменную, обращаясь к
+                        ней по имени в контексте вызова функции вывода на экран. То есть теперь функция print получает
+                        не текст напрямую, а переменную, которая содержит этот текст.
+                    </p>
+                    <br><br>
+                    <h3>Конкатенация</h3>
+                    <p class="info">
+                        Этим страшным словом называется операция склеивания нескольких строк в одну. Предположим, у нас
+                        есть две уже знакомые переменные: <b>$favorite_color и $favorite_number</b>, а мы собираемся
+                        вывести их
+                        в одной строке, чтобы получить такой результат:
+                        <br><br>
+                        <em>“Мой любимый цвет — зелёный, а любимое число — 42”</em>
+                        <br><br>
+                        где значение цвета хранится в $favorite_color, а числа в $favorite_number”.
+                        <br><br>
+                        Чтобы получить такую строку, необходимо использовать оператор конкатенации — . (точка). В
+                        качестве операндов он берёт две строки или переменные, содержащие строку, а затем возвращает
+                        новую строку.
+                        Выглядит это так:
+                    </p>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="php conc"
+                        src="https://codepen.io/B8te/embed/mdWwwYN?height=265&theme-id=dark&default-tab=html,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/mdWwwYN'>php conc</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br><br>
+                    <h3>Типы данных</h3>
+                    <p class="info">
+                        Выше уже упоминалось, что данные, помещённые в переменную, могут быть строкой текста или числом.
+                        В действительности таких типов данных гораздо больше, но первое время мы будем работать только с
+                        несколькими. Однако нам всё равно важно уже сейчас понимать, что такое «типы данных».
+                        Тип данных в языке программирования определяет допустимые значения, а также допустимые операции
+                        с данными этого типа.
+                        <br>
+                        Например, с данными типа «целое число» допускается выполнять арифметические операции, а с
+                        данными типа «строка» — нет. Поделить строку на строку невозможно. Кроме того, числа могут быть
+                        только в определенных пределах (в версии PHP для 32-битной ОС, самое большое число: 2147483647),
+                        а строки обязательно должны находиться в кавычках.
+                    </p>
+                    <br><br>
+                    <h3>Операторы</h3>
+                    <p class="info">
+                        Оператором в программировании называется нечто, принимающее одно или более значений.
+                        Например, в арифметике есть такие операторы: +, -, /, *. Что означает сложение, вычитание,
+                        деление и умножение. Оператор всегда работает только в паре с двумя значениями, например
+                        складывает два числа (операнда) или умножает их друг на друга.
+                        <br><br>
+                        PHP дополняет уже знакомые нам из арифметики операторы, несколькими новыми:
+                        <br><br>
+                        уже знакомый оператор присваивания =, который используется для присваивания значения переменной;
+                        <br>
+                        очень полезны операторы сравнения: ==, !=, >, &lt; - равно, не равно, больше и меньше;
+                        <br>
+                        % — оператор остатка от деления одного числа на другое. Например: 5 % 2==1; // true.
+                    </p>
+                    <br><br>
+                    <h3>Условные конструкции</h3>
+                    <p class="info">
+                        Иногда, в зависимости от условия, нужно выполнять различные действия. Для этого используется
+                        оператор if. Например, мы спросили пол посетителя нашей страницы, сохранили его в переменную, а
+                        теперь хотим вывести разное приветствие, в зависимости от того, мужчина это или женщина. Для
+                        этого пригодятся операторы if и else.
+                    </p>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="php ifelse"
+                        src="https://codepen.io/B8te/embed/xxqrLKa?height=265&theme-id=dark&default-tab=html,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/xxqrLKa'>php ifelse</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <p class="info">
+                        Из примера видно, что условная конструкция состоит из трех частей:
+                        <br><br>
+                        условие if — выражение, которое возвращает истинный или ложный результат;
+                        <br>
+                        блок if — строки кода, которые будут выполнены, если условие вернуло истину;
+                        <br>
+                        блок else — строки кода, которые будут выполнены, если условие вернуло ложь.
+                        <br><br>
+                        Обратите внимание, что каждый блок обрамляется и ограничивается фигурными скобками.
+                    </p>
+                    <br><br>
+                    <h3>Выражения</h3>
+                    <p class="info">
+                        Выражение в языке программирование — это минимальный блок кода, имеющий значение (результат).
+                        Звучит несколько сложно, но на практике почти каждая строка сценария является выражением. Вот
+                        несколько примеров выражений:
+                        <br><br>
+                        $amount = 2 + 2;
+                        <br>
+                        2 > 3
+                        <br>
+                        $gender == "мужчина"
+                        <br><br>
+                        Важно усвоить одно главное свойство выражений — они всегда имеют результат. Также различают два
+                        типа выражений: логические и арифметические. Результатом выполнения логического выражение всегда
+                        будет истина или ложь.
+                        <br>
+                        Например, результатом выражения 2 > 3 будет “ложь”, потому что два, очевидно, меньше трех.
+                        <br><br>
+                        Другим видом выражений является арифметическое выражение. Результатом выражения $amount = 2 + 2
+                        будет 4.
+                        <br><br>
+                        В каких случаях может понадобиться знать результат выражения?
+                        Выражения особенно полезны в условиях, то есть когда мы хотим выполнить или не выполнять
+                        какое-либо действие, в зависимости от результата выражения. Выражения также можно объединять
+                        между собой таким образом, что несколько отдельных выражений в итоге вычисляются как одно.
+                        <br><br>
+                        Предположим, что на нашем сайте мы хотим показать определённую картинку только посетителям
+                        мужского пола и старше 18 лет. Ранее, в коде сценария, мы уже получили и сохранили год рождения
+                        и пол посетителя в переменные $age и $gender.
+                        Напишем выражение и условие для реализации такого поведения:
+                    </p>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="php vyr"
+                        src="https://codepen.io/B8te/embed/gOmRxbp?height=265&theme-id=dark&default-tab=html,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/gOmRxbp'>php vyr</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <p class="info">
+                        Обратите внимание на ключевое слово and — это оператор, который объединяет два отдельных
+                        выражения в одно новое. Это новое выражение будет иметь значение «истина», только если оба
+                        отдельных выражений будут истинны.
+                        <br>
+                        Иными словами, наше условие будет выполняться только для посетителей мужского пола И возрастом
+                        старше восемнадцати. То есть несовершенолетние мальчики, равно как и совершенолетние девочки
+                        никакой картинки не увидят.
+                    </p>
+                    <br><br>
+                    <h3>Понятие алгоритма</h3>
+                    <p class="info">
+                        Многие из нас что-то слышали про алгоритмы на уроках информатики в школе. К сожалению, далеко не
+                        все школьные знания остаются с нами после её окончания. Тем не менее, понимание, что такое
+                        алгоритм, и умение эти самые алгоритмы строить — это очень важные навыки, без которых не
+                        получится решать даже относительно простые задачи.
+                        <br><br>
+                        Если говорить простыми словами, то алгоритм — это просто очень подробный план работы. Мы все в
+                        течение жизни что-нибудь планируем: отпуск, какое-нибудь мероприятие, своё самостоятельное
+                        обучение и тому подобное. От простого списка шагов алгоритм отличает существование условий и
+                        повторяющихся действий. Если вы в состоянии создать хороший, подробный алгоритм для реализации,
+                        скажем, какой-нибудь возможности на сайте, то можно считать, что половина дела уже сделана!
+                        <br><br>
+                        Разберём для примера один алгоритм средней сложности. На сайт нужно добавить форму обратной
+                        связи. Пользователь может заполнить эту форму, указать там свои контактные данные и написать
+                        сообщение. Информация из заполненной формы отправляется на электронную почту владельцу сайта.
+                        Вот как будет выглядеть алгоритм для этой задачи:
+                        <br><br>
+                        Показать форму.
+                        <br>
+                        Проверить, что форма отправлена.
+                        <br>
+                        Составить список полей формы, обязательных для заполнения.
+                        <br>
+                        Для каждого поля из списка проверить, что оно заполнено.
+                        <br>
+                        Если поле не заполнено, показать ошибку и не отправлять форму.
+                        <br>
+                        Если все поля заполнены, сформировать сообщение электронной почты.
+                        <br>
+                        Отправить сообщение на адрес администратора сайта.
+                    </p>
+                    <br><br>
+                    <h3>Конфигурация PHP</h3>
+                    <p class="info">
+                        Большинство программ всегда имеют отдельное окно настроек, где можно указать все основные
+                        параметры этого приложения. В PHP тоже есть свои настройки, только меняются они не через
+                        интерфейс, а путём редактирования специального файла — php.ini. В файле php.ini задаются все
+                        настройки работы PHP. Из того, что нас будет интересовать в первую очередь — это режим
+                        управления ошибками, подключение дополнительных возможностей, настройки сессий и кук.
+                        <br><br>
+                        В разных ОС этот файл находится по разным путям. Проще всего пользователям сборки OpenServer —
+                        там php.ini можно открыть из главного меню.
+                    </p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mt-5">
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center"
+                    href="../../python/teor/lp1.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Раздел Python
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/ls1.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Предыдущий урок
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../index.html">
+                    На главную
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/ls3.html">
+                    Следующий урок
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../c/teor/lc1.html">
+                    Раздел HTML+CSS
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+            </div>
+
+        </div>
+    </main>
+    <a class="btn-top hide" href="#" onclick="return up()" style="position: fixed; bottom: 50px; right: 50px;"><span
+            class="material-icons">
+            arrow_upward
+        </span></a>
+    <footer>
+        <a href="https://metanit.com/" class="btn btn-outline-primary mr-3"> metanit.com</a>
+        <a href="https://learn.javascript.ru/" class="btn btn-outline-primary">learn.javascript.ru</a>
+        <a href="https://vertex-academy.com/" class="btn btn-outline-primary">vertex-academy.com</a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

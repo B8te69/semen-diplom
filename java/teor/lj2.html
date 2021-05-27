@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Язык JavaScript. Урок №2</title>
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .btn-top {
+            padding: 20px;
+            background-color: #e1dcce;
+            border-radius: 100%;
+        }
+
+        .btn-top span {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top main-color">
+            <div class="container">
+
+
+                <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/logo.png" /><span
+                        class="hading">B8te: Code</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html"> <i class="material-icons">
+                                    home
+                                </i>Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    menu_book
+                                </i>Языки программирования
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/c/teor/lc1.html">HTML + CSS</a>
+                                <a class="dropdown-item" href="/java/teor/lj1.html">JavaScript</a>
+                                <a class="dropdown-item" href="/python/teor/lp1.html">Python</a>
+                                <a class="dropdown-item" href="/swift/teor/ls1.html">PHP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#">Информация<span class="sr-only">(current)</span></a> -->
+                            <a class="nav-link" href="../../login.html"><i class="material-icons">
+                                    account_box
+                                </i>Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container margin-top-100">
+            <div class="item">
+                <div class="content-l text-l">
+                    <h3 class="text-center"> Язык Java</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Теория
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../teor/lj1.html">Урок №1. Введение в JavaScript</a>
+                                    <a class="gg">Урок №2. Привет, мир!</a>
+                                    <a class="gg" href="../teor/lj3.html">Урок №3. Структура кода</a>
+                                    <a class="gg" href="../teor/lj4.html">Урок №4. Строгий режим - "use strict"</a>
+                                    <a class="gg" href="../teor/lj5.html">Урок №5. Переменные</a>
+                                    <a class="gg" href="../teor/lj6.html">Урок №6. Типы данных</a>
+                                    <a class="gg" href="../teor/lj7.html">Урок №7. Логические операторы</a>
+                                    <a class="gg" href="../teor/lj8.html">Урок №8. Циклы for и while</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Практика
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse collapsed" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../prac/pj1.html">Тест №1</a>
+                                    <a class="gg" href="../prac/pj2.html">Тест №2</a>
+                                    <a class="gg" href="../prac/pj3.html">Тест №3</a>
+                                    <a class="gg" href="../prac/pj4.html">Тест №4</a>
+                                    <a class="gg" href="../prac/pj5.html">Тест №5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Контроль
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse collapsed" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../kr/kj.html">Задания для выполнения</a>
+                                    <a class="gg" href="../kr/zakluchenie_java.html">Заключение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-l text-r">
+                    <h1 class="">Урок №2. Привет, Мир!</h1>
+                    <br><br>
+                    <p class="info">
+                        В этой части учебника мы изучаем собственно JavaScript, сам язык.
+                        <br><br>
+                        Но нам нужна рабочая среда для запуска наших скриптов, и, поскольку это онлайн-книга, то браузер
+                        будет хорошим выбором. В этой главе мы сократим количество специфичных для браузера команд
+                        (например, alert) до минимума, чтобы вы не тратили на них время, если планируете сосредоточиться
+                        на другой среде (например, Node.js). А на использовании JavaScript в браузере мы сосредоточимся
+                        в следующей части учебника.
+                        <br><br>
+                        Итак, сначала давайте посмотрим, как выполнить скрипт на странице. Для серверных сред (например,
+                        Node.js), вы можете выполнить скрипт с помощью команды типа "node my.js". Для браузера всё
+                        немного иначе.
+                    </p>
+                    <h3>Тег «script»</h3>
+                    <p class="info">
+                        Программы на JavaScript могут быть вставлены в любое место HTML-документа с помощью тега
+                        &lt;script>.
+                        Для примера:
+                    </p>
+                    <iframe height="400" style="width: 100%; border-radius:16px;" scrolling="no" title="helloworldjs"
+                        src="https://codepen.io/B8te/embed/KKWWoQv?height=265&theme-id=dark&default-tab=html,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/KKWWoQv'>helloworldjs</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <h3>Современная разметка</h3>
+                    <p class="info">
+                        Тег &lt;script> имеет несколько атрибутов, которые редко используются, но всё ещё могут
+                        встретиться в старом коде:
+                        <br><br>
+                        <b>Атрибут</b> type: &lt;script type=…>
+                        <br>
+                        Старый стандарт HTML, HTML4, требовал наличия этого атрибута в теге &lt;script>. Обычно он имел
+                        значение type="text/javascript". На текущий момент этого больше не требуется. Более того, в
+                        современном стандарте HTML смысл этого атрибута полностью изменился. Теперь он может
+                        использоваться для JavaScript-модулей.
+                        <br><br>
+                        <b>Атрибут</b> language: &lt;script language=…>
+                        <br><br>
+                        Этот атрибут должен был задавать язык, на котором написан скрипт. Но так как JavaScript является
+                        языком по умолчанию, в этом атрибуте уже нет необходимости.
+                        <br><br>
+                        <b>Обёртывание скрипта в HTML-комментарии.</b>
+                        <br>
+                        В очень древних книгах и руководствах вы сможете найти комментарии внутри тега &lt;script>,
+                        например, такие:
+                    </p>
+                    <iframe height="265" style="width: 100%;" scrolling="no" title="scripthellw"
+                        src="https://codepen.io/B8te/embed/rNyydvK?height=265&theme-id=dark&default-tab=html,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/rNyydvK'>scripthellw</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <p class="info">
+                        Этот комментарий скрывал код JavaScript в старых браузерах, которые не знали, как обрабатывать
+                        тег &lt;script>. Поскольку все браузеры, выпущенные за последние 15 лет, не содержат данной
+                        проблемы, такие комментарии уже не нужны. Если они есть, то это признак, что перед нами очень
+                        древний код.
+                    </p>
+                    <p class="warning">
+                        На заметку:
+                        <br>
+                        Как правило, только простейшие скрипты помещаются в HTML. Более сложные выделяются в отдельные
+                        файлы.
+                        <br>
+                        Польза от отдельных файлов в том, что браузер загрузит скрипт отдельно и сможет хранить его в
+                        кеше.
+                        <br>
+                        Другие страницы, которые подключают тот же скрипт, смогут брать его из кеша вместо повторной
+                        загрузки из сети. И таким образом файл будет загружаться с сервера только один раз.
+                        <br>
+                        Это сокращает расход трафика и ускоряет загрузку страниц.
+                    </p>
+                    <h3>Итого</h3>
+                    <p class="info">
+                        Для добавления кода JavaScript на страницу используется тег &lt;script>
+                        <br>
+                        Атрибуты type и language необязательны.
+                        <br>
+                        Скрипт во внешнем файле можно вставить с помощью &lt;script
+                        src="path/to/script.js">&lt;/script>.
+                        <br><br>
+                        Как уже было сказано, эта часть учебника посвящена именно языку JavaScript, поэтому здесь мы
+                        постараемся не отвлекаться на детали реализации в браузере. Мы воспользуемся браузером для
+                        запуска JavaScript, это удобно для онлайн-демонстраций, но это только одна из платформ, на
+                        которых работает этот язык.
+                    </p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mt-5">
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../c/teor/lc1.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Раздел HTML+CSS
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="lj1.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Предыдущий урок
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../index.html">
+                    На главную
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/lj3.html">
+                    Следующий урок
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center"
+                    href="../../python/teor/lp1.html">
+                    Раздел Python
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+    <a class="btn-top hide" href="#" onclick="return up()" style="position: fixed; bottom: 50px; right: 50px;"><span
+            class="material-icons">
+            arrow_upward
+        </span></a>
+    <footer>
+        <a href="https://metanit.com/" class="btn btn-outline-primary mr-3"> metanit.com</a>
+        <a href="https://learn.javascript.ru/" class="btn btn-outline-primary">learn.javascript.ru</a>
+        <a href="https://vertex-academy.com/" class="btn btn-outline-primary">vertex-academy.com</a>
+    </footer>
+    <script src="../../js/scrollTop11.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

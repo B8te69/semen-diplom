@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Язык Python. Урок №19</title>
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .hide {
+            display: none;
+        }
+        
+        .show {
+            display: block;
+        }
+        
+        .btn-top {
+            padding: 20px;
+            background-color: #e1dcce;
+            border-radius: 100%;
+        }
+        
+        .btn-top span {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top main-color">
+            <div class="container">
+
+
+                <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/logo.png" /><span
+                        class="hading">B8te: Code</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html"> <i class="material-icons">
+                                    home
+                                </i>Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    menu_book
+                                </i>Языки программирования
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/c/teor/lc1.html">HTML + CSS</a>
+                                <a class="dropdown-item" href="/java/teor/lj1.html">JavaScript</a>
+                                <a class="dropdown-item" href="/python/teor/lp1.html">Python</a>
+                                <a class="dropdown-item" href="/swift/teor/ls1.html">PHP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#">Информация<span class="sr-only">(current)</span></a> -->
+                            <a class="nav-link" href="../../login.html"><i class="material-icons">
+                                    account_box
+                                </i>Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container margin-top-100">
+            <div class="item">
+                <div class="content-l text-l">
+                    <h3 class="text-center"> Язык Python</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Теория
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="lp1.html">Урок №1. Возможности языка Python</a>
+                                    <a class="gg" href="lp2.html">Урок №2. Загрузка и установка Python</a>
+                                    <a class="gg" href="lp3.html">Урок №3. Первая программа</a>
+                                    <a class="gg" href="lp4.html">Урок №4. Синтаксис</a>
+                                    <a class="gg" href="lp5.html">Урок №5. Оператор if</a>
+                                    <a class="gg" href="lp6.html">Урок №6. Циклы</a>
+                                    <a class="gg" href="lp7.html">Урок №7. Ключевые слова, встроенные функции</a>
+                                    <a class="gg" href="lp8.html">Урок №8. Числа</a>
+                                    <a class="gg" href="lp9.html">Урок №9. Массивы</a>
+                                    <a class="gg" href="lp10.html">Урок №10. Индексы и срезы</a>
+                                    <a class="gg" href="lp11.html">Урок №11. Кортежи</a>
+                                    <a class="gg" href="lp12.html">Урок №12. Словари</a>
+                                    <a class="gg" href="lp13.html">Урок №13. Множества</a>
+                                    <a class="gg" href="lp14.html">Урок №14. Функции</a>
+                                    <a class="gg" href="lp15.html">Урок №15. Исключения и их обработка</a>
+                                    <a class="gg" href="lp16.html">Урок №16. Байтовые строки</a>
+                                    <a class="gg" href="lp17.html">Урок №17. Файлы</a>
+                                    <a class="gg" href="lp18.html">Урок №18. Документирование кода</a>
+                                    <a class="gg">Урок №19. Создание и подключение модулей</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Практика
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse collapsed" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../prac/pp1.html">Тест №1</a>
+                                    <a class="gg" href="../prac/pp2.html">Тест №2</a>
+                                    <a class="gg" href="../prac/pp3.html">Тест №3</a>
+                                    <a class="gg" href="../prac/pp4.html">Тест №4</a>
+                                    <a class="gg" href="../prac/pp5.html">Тест №5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Контроль
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse collapsed" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../kr/kp.html">Контрольная работа №1</a>
+                                    <a class="gg" href="../kr/kp2.html">Контрольная работа №2</a>
+                                    <a class="gg" href="../kr/zakl_python.html">Заключение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-l text-r">
+                    <h1 class="">Урок №19. Работа с модулями: создание, подключение инструкциями import и from
+                    </h1>
+                    <br>
+                    <p class="info">Модулем в Python называется любой файл с программой (да-да, все те программы, которые вы писали,
+                    можно назвать модулями).
+                    <br><br>
+                    Каждая программа может импортировать модуль и получить доступ к его классам, функциям и объектам.
+                    Нужно заметить, что модуль может быть написан не только на Python, а например, на C или C++.
+                    </p><br><br>
+                    <h3>Подключение модуля из стандартной библиотеки</h3>
+                    <br>
+                    <p class="info">Подключить модуль можно с помощью инструкции import. К примеру, подключим модуль os для получения
+                    текущей директории:
+                    <br><br>
+                    
+                        >>> import os
+                        >>> os.getcwd()
+                        'C:\\Python33'
+                    <br>
+                    <br>
+                    После ключевого слова import указывается название модуля. Одной инструкцией можно подключить
+                    несколько модулей, хотя этого не рекомендуется делать, так как это снижает читаемость кода.
+                    Импортируем модули time и random.
+                    <br><br>
+                    
+                        >>> import time, random
+                        <br>
+                        >>> time.time()
+                        <br>
+                        1376047104.056417
+                        <br>
+                        >>> random.random()
+                        <br>
+                        0.9874550833306869
+                    <br><br>
+                    После импортирования модуля его название становится переменной, через которую можно получить доступ
+                    к атрибутам модуля. Например, можно обратиться к константе e, расположенной в модуле math:
+                    <br><br>
+                    
+                        >>> import math
+                        >>> math.e
+                        2.718281828459045
+                    <br>
+                    <br>
+                    Стоит отметить, что если указанный атрибут модуля не будет найден, возбудится <a
+                        href="../teor/lp15.html">исключение</a>
+                    AttributeError. А если не удастся найти модуль для импортирования, то ImportError.
+                    <br><br>
+                    
+                        >>> import notexist
+                        <br>
+                        Traceback (most recent call last):
+                        <br>
+                        File "", line 1, in
+                        <br>
+                        import notexist
+                        <br>
+                        ImportError: No module named 'notexist'
+                        <br>
+                        >>> import math
+                        <br>
+                        >>> math.Ё
+                        <br>
+                        Traceback (most recent call last):
+                        <br>
+                        File "", line 1, in
+                        <br>
+                        math.Ё
+                        <br>
+                        AttributeError: 'module' object has no attribute 'Ё'
+                    </p>
+                    <br><br>
+                    <h3>Использование псевдонимов</h3>
+                    <br>
+                    <p class="info">Если название модуля слишком длинное, или оно вам не нравится по каким-то другим причинам, то для
+                    него можно создать псевдоним, с помощью ключевого слова as.
+                    <br><br>
+                    
+                        >>> import math as m
+                        <br>
+                        >>> m.e
+                        <br>
+                        2.718281828459045
+                    
+                    <br>
+                    Теперь доступ ко всем атрибутам модуля math осуществляется только с помощью переменной m, а
+                    переменной math в этой программе уже не будет (если, конечно, вы после этого не напишете import
+                    math, тогда модуль будет доступен как под именем m, так и под именем math).
+                    </p><br><br>
+                    <h3>Инструкция from</h3>
+                    <br>
+                    <p class="info">Подключить определенные атрибуты модуля можно с помощью инструкции from. Она имеет несколько
+                    форматов:
+                    <br><br>
+                    
+                        from &#60Название модуля> import &#60Атрибут 1> [ as &#60Псевдоним 1> ], [&#60Атрибут 2> [ as
+                        &#60Псевдоним 2> ]
+                        ...]
+                        <br>
+                        from &#60Название модуля> import *
+                    <br>
+                    <br>
+                    Первый формат позволяет подключить из модуля только указанные вами атрибуты.
+                    Для длинных имен также можно назначить псевдоним, указав его после ключевого
+                    слова as.
+                    <br><br>
+                    
+                    >>> from math import e, ceil as c
+                    <br>
+                    >>> e
+                    <br>
+                    2.718281828459045
+                    <br>
+                    >>> c(4.6)
+                    <br>
+                    5
+                    <br>
+                    <br>
+                    Импортируемые атрибуты можно разместить на нескольких строках, если их
+                    много, для лучшей читаемости кода:
+                    <br><br>
+                    
+                    >>> from math import (sin, cos,
+                    <br>
+                    ... tan, atan)
+                    <br>
+                    <br>
+                    Второй формат инструкции from позволяет подключить все (точнее, почти все)
+                    переменные из модуля. Для примера импортируем все атрибуты из модуля sys:
+                    <br><br>
+                    
+                    >>> from sys import *
+                    <br>
+                    >>> version
+                    <br>
+                    '3.3.2 (v3.3.2:d047928ae3f6, May 16 2013, 00:03:43) [MSC v.1600 32 bit
+                    <br>
+                    (Intel)]'
+                    <br>
+                    >>> version_info
+                    <br>
+                    sys.version_info(major=3, minor=3, micro=2, releaselevel='final', serial=0)
+                    <br>
+                    <br>
+                    Следует заметить, что не все атрибуты будут импортированы. Если в модуле
+                    определена переменная __all__ (список атрибутов, которые могут быть
+                    подключены), то будут подключены только атрибуты из этого списка. Если
+                    переменная __all__ не определена, то будут подключены все атрибуты, не
+                    начинающиеся с нижнего подчёркивания. Кроме того, необходимо учитывать, что
+                    импортирование всех атрибутов из модуля может нарушить пространство имен
+                    главной программы, так как переменные, имеющие одинаковые имена, будут
+                    перезаписаны.
+                    </p><br><br>
+                    <h3>Создание своего модуля на Python</h3>
+                    <br>
+                    <p class="info">Теперь пришло время создать свой модуль. Создадим файл mymodule.py, в
+                    которой определим какие-нибудь функции:
+                    <br><br>
+                    
+                    def hello():
+                    <br>
+                    print('Hello, world!')
+                    <br>
+                    <br>
+                    def fib(n):
+                    <br>
+                    a = b = 1
+                    <br>
+                    for i in range(n - 2):
+                    <br>
+                    a, b = b, a + b
+                    <br>
+                    return b
+                    <br>
+                    <br>
+                    Теперь в этой же папке создадим другой файл, например, main.py:
+                    <br><br>
+                    
+                    import mymodule
+                    <br>
+                    <br>
+                    mymodule.hello()
+                    <br>
+                    print(mymodule.fib(10))
+                    <br>
+                    <br>
+                    Выведет:
+                    <br><br>
+                    
+                    Hello, world!
+                    55
+                    </p>
+                    <br><br>
+                    <h3>Как назвать модуль?</h3>
+                    <br>
+                    <p class="info">Помните, что вы (или другие люди) будут его импортировать и использовать в
+                    качестве переменной. Модуль нельзя именовать также, как и ключевое слово. Также имена модулей нельзя начинать с цифры. И
+                    не стоит называть модуль также, как какую-либо из <a href="../teor/lp7.html">встроенных функций</a>. То
+                    есть, конечно, можно, но это создаст большие неудобства при его последующем
+                    использовании.</p>
+                    <br><br>
+                    <h3>Куда поместить модуль?</h3>
+                    <br>
+                    <p class="info">Туда, где его потом можно будет найти. Пути поиска модулей указаны в
+                    переменной sys.path. В него включены текущая директория (то есть модуль
+                    можно оставить в папке с основной программой), а также директории, в которых
+                    установлен python. Кроме того, переменную sys.path можно изменять вручную,
+                    что позволяет положить модуль в любое удобное для вас место (главное, не
+                    забыть в главной программе модифицировать sys.path).</p>
+                    <br><br>
+                    <h3>Можно ли использовать модуль как самостоятельную программу?</h3>
+                    <br>
+                    <p class="info">Можно. Однако надо помнить, что при импортировании модуля его код
+                    выполняется полностью, то есть, если программа что-то печатает, то при её
+                    импортировании это будет напечатано. Этого можно избежать, если проверять,
+                    запущен ли скрипт как программа, или импортирован. Это можно сделать с
+                    помощью переменной __name__, которая определена в любой программе, и равна
+                    "__main__", если скрипт запущен в качестве главной программы, и имя, если он
+                    импортирован. Например, mymodule.py может выглядеть вот так:
+                    <br><br>
+                    
+                    def hello():
+                    <br>
+                    print('Hello, world!')
+                    <br>
+                    <br>
+                    def fib(n):
+                    <br>
+                    a = b = 1
+                    <br>
+                    for i in range(n - 2):
+                    <br>
+                    a, b = b, a + b
+                    <br>
+                    return b
+                    <br>
+                    <br>
+                    if __name__ == "__main__":
+                    <br>
+                    hello()
+                    <br>
+                    for i in range(10):
+                    <br>
+                    print(fib(i))
+                    </p>
+                    <br>
+                    <h3>Теперь вы можете перейти к <a href="../prac/pp1.html">практике</a> и закрепить свои знания!</h3>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mt-5">
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../java/teor/lj1.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Раздел JavaScript
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/lp18.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Предыдущий урок
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../index.html">
+                    На главную
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="/python/prac/pp1.html">
+                    Тесты
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../swift/teor/ls1.html">
+                    Раздел PHP
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+    <a class="btn-top hide" href="#" onclick="return up()" style="position: fixed; bottom: 50px; right: 50px;"><span class="material-icons">
+        arrow_upward
+        </span></a>
+    <footer>
+        <a href="https://metanit.com/" class="btn btn-outline-primary mr-3"> metanit.com</a>
+        <a href="https://learn.javascript.ru/" class="btn btn-outline-primary">learn.javascript.ru</a>
+        <a href="https://vertex-academy.com/" class="btn btn-outline-primary">vertex-academy.com</a>
+    </footer>
+    <script src="../../js/scrollTop22.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

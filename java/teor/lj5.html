@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Язык JavaScript. Урок №5</title>
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .btn-top {
+            padding: 20px;
+            background-color: #e1dcce;
+            border-radius: 100%;
+        }
+
+        .btn-top span {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top main-color">
+            <div class="container">
+
+
+                <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/logo.png" /><span
+                        class="hading">B8te: Code</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html"> <i class="material-icons">
+                                    home
+                                </i>Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    menu_book
+                                </i>Языки программирования
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/c/teor/lc1.html">HTML + CSS</a>
+                                <a class="dropdown-item" href="/java/teor/lj1.html">JavaScript</a>
+                                <a class="dropdown-item" href="/python/teor/lp1.html">Python</a>
+                                <a class="dropdown-item" href="/swift/teor/ls1.html">PHP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#">Информация<span class="sr-only">(current)</span></a> -->
+                            <a class="nav-link" href="../../login.html"><i class="material-icons">
+                                    account_box
+                                </i>Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container margin-top-100">
+            <div class="item">
+                <div class="content-l text-l">
+                    <h3 class="text-center"> Язык JavaScript</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Теория
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../teor/lj1.html">Урок №1. Введение в JavaScript</a>
+                                    <a class="gg" href="../teor/lj2.html">Урок №2. Привет, мир!</a>
+                                    <a class="gg" href="../teor/lj3.html">Урок №3. Структура кода</a>
+                                    <a class="gg" href="../teor/lj4.html">Урок №4. Строгий режим - "use strict"</a>
+                                    <a class="gg">Урок №5. Переменные</a>
+                                    <a class="gg" href="../teor/lj6.html">Урок №6. Типы данных</a>
+                                    <a class="gg" href="../teor/lj7.html">Урок №7. Логические операторы</a>
+                                    <a class="gg" href="../teor/lj8.html">Урок №8. Циклы for и while</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Практика
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse collapsed" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../prac/pj1.html">Тест №1</a>
+                                    <a class="gg" href="../prac/pj2.html">Тест №2</a>
+                                    <a class="gg" href="../prac/pj3.html">Тест №3</a>
+                                    <a class="gg" href="../prac/pj4.html">Тест №4</a>
+                                    <a class="gg" href="../prac/pj5.html">Тест №5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Контроль
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse collapsed" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../kr/kj.html">Задания для выполнения</a>
+                                    <a class="gg" href="../kr/zakluchenie_java.html">Заключение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-l text-r">
+                    <h1 class="">Урок №5. Переменные в JavaScript</h1>
+                    <p class="info">
+                        JavaScript-приложению обычно нужно работать с информацией. Например:
+                        <br><br>
+                        Интернет-магазин – информация может включать продаваемые товары и корзину покупок.
+                        <br>
+                        Чат – информация может включать пользователей, сообщения и многое другое.
+                        <br><br>
+                        Переменные используются для хранения этой информации.
+                    </p>
+                    <h3>Переменная</h3>
+                    <p class="info">
+                        Переменная – это «именованное хранилище» для данных. Мы можем использовать переменные для
+                        хранения товаров, посетителей и других данных.
+                        <br><br>
+                        Для создания переменной в JavaScript используйте ключевое слово let.
+                        <br><br>
+                        Приведённая ниже инструкция создаёт (другими словами: объявляет или определяет) переменную с
+                        именем «message»:
+                        <br><br>
+                        let message;
+                        <br><br>
+                        Теперь можно поместить в неё данные, используя оператор присваивания =:
+                        <br><br>
+                        let message;
+                        <br>
+                        message = 'Hello'; // сохранить строку
+                        <br><br>
+                        Строка сохраняется в области памяти, связанной с переменной. Мы можем получить к ней доступ,
+                        используя имя переменной:
+                        <br><br>
+                        let message;
+                        <br>
+                        message = 'Hello!';
+                        <br>
+                        alert(message); // показывает содержимое переменной
+                        <br><br>
+                        Для краткости можно совместить объявление переменной и запись данных в одну строку:
+                        <br><br>
+                        let message = 'Hello!'; // определяем переменную и присваиваем ей значение
+                        <br>
+                        alert(message); // Hello!
+                        <br><br>
+                        Мы также можем объявить несколько переменных в одной строке:
+                        <br><br>
+                        let user = 'John', age = 25, message = 'Hello';
+                        <br><br>
+                        Такой способ может показаться короче, но мы не рекомендуем его. Для лучшей читаемости объявляйте
+                        каждую переменную на новой строке.
+                        <br><br>
+                        Многострочный вариант немного длиннее, но легче для чтения:
+                        <br><br>
+                        let user = 'John';
+                        <br>
+                        let age = 25;
+                        <br>
+                        let message = 'Hello';
+                        <br><br>
+                        Некоторые люди также определяют несколько переменных в таком вот многострочном стиле:
+                        <br><br>
+                        let user = 'John',
+                        <br>
+                        age = 25,
+                        <br>
+                        message = 'Hello';
+                        <br><br>
+                        …Или даже с запятой в начале строки:
+                        <br><br>
+                        let user = 'John'
+                        <br>
+                        , age = 25
+                        <br>
+                        , message = 'Hello';
+                        <br><br>
+                        В принципе, все эти варианты работают одинаково. Так что это вопрос личного вкуса и эстетики.
+                    </p>
+                    <p class="warning">
+                        <b>var вместо let</b>
+                        <br><br>
+                        В старых скриптах вы также можете найти другое ключевое слово: var вместо let:
+                        <br><br>
+                        var message = 'Hello';
+                        <br><br>
+                        Ключевое слово var – почти то же самое, что и let. Оно объявляет переменную, но немного
+                        по-другому, «устаревшим» способом.
+                        <br><br>
+                        Есть тонкие различия между let и var, но они пока не имеют для нас значения. Мы подробно
+                        рассмотрим их в главе Устаревшее ключевое слово "var".
+                    </p>
+                    <p class="warning">
+                        <b>Повторное объявление вызывает ошибку</b>
+                        <br>
+                        Переменная может быть объявлена только один раз.
+                        <br><br>
+                        Повторное объявление той же переменной является ошибкой:
+                        <br><br>
+                        let message = "Это";
+                        <br>
+                        // повторение ключевого слова 'let' приводит к ошибке
+                        <br>
+                        let message = "Другое"; // SyntaxError: 'message' has already been declared
+                        <br><br>
+                        Поэтому следует объявлять переменную только один раз и затем использовать её уже без let.
+                    </p>
+                    <p class="warning">
+                        <b>Функциональные языки программирования</b>
+                        <br><br>
+                        Примечательно, что существуют функциональные языки программирования, такие как Scala или Erlang,
+                        которые запрещают изменять значение переменной.
+                        <br><br>
+                        В таких языках однажды сохранённое «в коробку» значение остаётся там навсегда. Если нам нужно
+                        сохранить что-то другое, язык заставляет нас создать новую коробку (объявить новую переменную).
+                        Мы не можем использовать старую переменную.
+                        <br><br>
+                        Хотя на первый взгляд это может показаться немного странным, эти языки вполне подходят для
+                        серьёзной разработки. Более того, есть такая область, как параллельные вычисления, где это
+                        ограничение даёт определённые преимущества. Изучение такого языка (даже если вы не планируете
+                        использовать его в ближайшее время) рекомендуется для расширения кругозора.
+                    </p>
+                    <br>
+                    <h3>Имена переменных</h3>
+                    <p class="info">
+                        В JavaScript есть два ограничения, касающиеся имён переменных:
+                        <br><br>
+                        Имя переменной должно содержать только буквы, цифры или символы $ и _.
+                        Первый символ не должен быть цифрой.
+                        <br><br>
+                        Примеры допустимых имён:
+                    </p>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="let commands"
+                        src="https://codepen.io/B8te/embed/NWpjzWB?height=265&theme-id=dark&default-tab=js,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/NWpjzWB'>let commands</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br>
+                    <p class="info">
+                        Если имя содержит несколько слов, обычно используется верблюжья нотация, то есть, слова следуют
+                        одно за другим, где каждое следующее слово начинается с заглавной буквы: myVeryLongName.
+                        <br><br>
+                        Самое интересное – знак доллара '$' и подчёркивание '_' также можно использовать в названиях.
+                        Это обычные символы, как и буквы, без какого-либо особого значения.
+                        <br><br>
+                        Эти имена являются допустимыми:
+                    </p>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="let true"
+                        src="https://codepen.io/B8te/embed/vYxmrEZ?height=265&theme-id=dark&default-tab=js,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/vYxmrEZ'>let true</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <p class="warning">
+                        <b>Регистр имеет значение</b>
+                        <br>
+                        Переменные с именами apple и AppLE – это две разные переменные.
+                        <br><br>
+                        <b>Нелатинские буквы разрешены, но не рекомендуются</b>
+                        <br>
+                        Можно использовать любой язык, включая кириллицу или даже иероглифы, например:
+                        <br><br>
+                        let имя = '...';
+                        <br>
+                        let 我 = '...';
+                        <br><br>
+                        Технически здесь нет ошибки, такие имена разрешены, но есть международная традиция использовать
+                        английский язык в именах переменных. Даже если мы пишем небольшой скрипт, у него может быть
+                        долгая жизнь впереди. Людям из других стран, возможно, придётся прочесть его не один раз.
+                        <br><br>
+                        <b>Зарезервированные имена</b>
+                        <br>
+                        Существует список зарезервированных слов, которые нельзя использовать в качестве имён
+                        переменных, потому что они используются самим языком.
+                        <br><br>
+                        Например: let, class, return и function зарезервированы.
+                        <br><br>
+                        <b>Создание переменной без использования use strict</b>
+                        <br>
+                        Обычно нам нужно определить переменную перед её использованием. Но в старые времена было
+                        технически возможно создать переменную простым присвоением значения без использования let. Это
+                        все ещё работает, если мы не включаем use strict в наших файлах, чтобы обеспечить совместимость
+                        со старыми скриптами.
+                    </p>
+                    <br>
+                    <h3>Константы</h3>
+                    <p class="info">
+                        Чтобы объявить константную, то есть, неизменяемую переменную, используйте const вместо let:
+                        <br><br>
+                        const myBirthday = '18.04.1982';
+                        <br><br>
+                        Переменные, объявленные с помощью const, называются «константами». Их нельзя изменить. Попытка
+                        сделать это приведёт к ошибке:
+                        <br><br>
+                        const myBirthday = '18.04.1982';
+                        <br>
+                        myBirthday = '01.01.2001'; // ошибка, константу нельзя перезаписать!
+                        <br><br>
+                        Если программист уверен, что переменная никогда не будет меняться, он может гарантировать это и
+                        наглядно донести до каждого, объявив её через const.
+                        <br><br>
+                        <b>Константы в верхнем регистре</b>
+                        <br>
+                        Широко распространена практика использования констант в качестве псевдонимов для трудно
+                        запоминаемых значений, которые известны до начала исполнения скрипта.
+                        <br><br>
+                        Названия таких констант пишутся с использованием заглавных букв и подчёркивания.
+                        <br><br>
+                        Например, сделаем константы для различных цветов в «шестнадцатеричном формате»:
+                    </p>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="const in up"
+                        src="https://codepen.io/B8te/embed/dyvWKMv?height=265&theme-id=dark&default-tab=js,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/dyvWKMv'>const in up</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <p class="info">
+                        Преимущества:
+                        <br><br>
+                        COLOR_ORANGE гораздо легче запомнить, чем "#FF7F00".
+                        <br>
+                        Гораздо легче допустить ошибку при вводе "#FF7F00", чем при вводе COLOR_ORANGE.
+                        <br>
+                        При чтении кода COLOR_ORANGE намного понятнее, чем #FF7F00.
+                        <br><br>
+                        Когда мы должны использовать для констант заглавные буквы, а когда называть их нормально?
+                        Давайте разберёмся и с этим.
+                        <br><br>
+                        Название «константа» просто означает, что значение переменной никогда не меняется. Но есть
+                        константы, которые известны до выполнения (например, шестнадцатеричное значение для красного
+                        цвета), а есть константы, которые вычисляются во время выполнения сценария, но не изменяются
+                        после их первоначального назначения.
+                    </p>
+                    <br>
+                    <h3>Итого</h3>
+                    <p class="info">
+                        Мы можем объявить переменные для хранения данных с помощью ключевых слов var, let или const.
+                        <br><br>
+                        <b>let</b> – это современный способ объявления.
+                        <br>
+                        <b>var</b> – это устаревший способ объявления. Обычно мы вообще не используем его, но мы рассмотрим
+                        тонкие отличия от let в главе Устаревшее ключевое слово "var" на случай, если это всё-таки вам
+                        понадобится.
+                        <br>
+                        <b>const</b> – похоже на let, но значение переменной не может изменяться.
+                        <br><br>
+                        Переменные должны быть названы таким образом, чтобы мы могли легко понять, что у них внутри.
+                    </p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mt-5">
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../c/teor/lc1.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Раздел HTML+CSS
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="lj4.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Предыдущий урок
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../index.html">
+                    На главную
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/lj6.html">
+                    Следующий урок
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center"
+                    href="../../python/teor/lp1.html">
+                    Раздел Python
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+    <a class="btn-top hide" href="#" onclick="return up()" style="position: fixed; bottom: 50px; right: 50px;"><span
+            class="material-icons">
+            arrow_upward
+        </span></a>
+    <footer>
+        <a href="https://metanit.com/" class="btn btn-outline-primary mr-3"> metanit.com</a>
+        <a href="https://learn.javascript.ru/" class="btn btn-outline-primary">learn.javascript.ru</a>
+        <a href="https://vertex-academy.com/" class="btn btn-outline-primary">vertex-academy.com</a>
+    </footer>
+    <script src="../../js/scrollTop13.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

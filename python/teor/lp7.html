@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Язык Python. Урок №7</title>
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .hide {
+            display: none;
+        }
+        
+        .show {
+            display: block;
+        }
+        
+        .btn-top {
+            padding: 20px;
+            background-color: #e1dcce;
+            border-radius: 100%;
+        }
+        
+        .btn-top span {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top main-color">
+            <div class="container">
+
+
+                <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/logo.png" /><span
+                        class="hading">B8te: Code</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html"> <i class="material-icons">
+                                    home
+                                </i>Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    menu_book
+                                </i>Языки программирования
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/c/teor/lc1.html">HTML + CSS</a>
+                                <a class="dropdown-item" href="/java/teor/lj1.html">JavaScript</a>
+                                <a class="dropdown-item" href="/python/teor/lp1.html">Python</a>
+                                <a class="dropdown-item" href="/swift/teor/ls1.html">PHP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#">Информация<span class="sr-only">(current)</span></a> -->
+                            <a class="nav-link" href="../../login.html"><i class="material-icons">
+                                    account_box
+                                </i>Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container margin-top-100">
+            <div class="item">
+                <div class="content-l text-l">
+                    <h3 class="text-center"> Язык Python</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Теория
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="lp1.html">Урок №1. Возможности языка Python</a>
+                                    <a class="gg" href="lp2.html">Урок №2. Загрузка и установка Python</a>
+                                    <a class="gg" href="lp3.html">Урок №3. Первая программа</a>
+                                    <a class="gg" href="lp4.html">Урок №4. Синтаксис</a>
+                                    <a class="gg" href="lp5.html">Урок №5. Оператор if</a>
+                                    <a class="gg" href="lp6.html">Урок №6. Циклы</a>
+                                    <a class="gg">Урок №7. Ключевые слова, встроенные функции</a>
+                                    <a class="gg" href="lp8.html">Урок №8. Числа</a>
+                                    <a class="gg" href="lp9.html">Урок №9. Массивы</a>
+                                    <a class="gg" href="lp10.html">Урок №10. Индексы и срезы</a>
+                                    <a class="gg" href="lp11.html">Урок №11. Кортежи</a>
+                                    <a class="gg" href="lp12.html">Урок №12. Словари</a>
+                                    <a class="gg" href="lp13.html">Урок №13. Множества</a>
+                                    <a class="gg" href="lp14.html">Урок №14. Функции</a>
+                                    <a class="gg" href="lp15.html">Урок №15. Исключения и их обработка</a>
+                                    <a class="gg" href="lp16.html">Урок №16. Байтовые строки</a>
+                                    <a class="gg" href="lp17.html">Урок №17. Файлы</a>
+                                    <a class="gg" href="lp18.html">Урок №18. Документирование кода</a>
+                                    <a class="gg" href="lp19.html">Урок №19. Создание и подключение модулей</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Практика
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse collapsed" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../prac/pp1.html">Тест №1</a>
+                                    <a class="gg" href="../prac/pp2.html">Тест №2</a>
+                                    <a class="gg" href="../prac/pp3.html">Тест №3</a>
+                                    <a class="gg" href="../prac/pp4.html">Тест №4</a>
+                                    <a class="gg" href="../prac/pp5.html">Тест №5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Контроль
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse collapsed" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../kr/kp.html">Контрольная работа №1</a>
+                                    <a class="gg" href="../kr/kp2.html">Контрольная работа №2</a>
+                                    <a class="gg" href="../kr/zakl_python.html">Заключение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-l text-r">
+                    <h1 class="">Урок №7. Ключевые слова, модуль keyword. Встроенные функции
+                    </h1>
+                    <br>
+                    <h3>Ключевые слова</h3>
+                    <br>
+                    <p class="info"><font color=dark>False</font> - ложь.
+                    <br>
+                    <font color=dark>True</font> - правда.
+                    <br>
+                    <font color=dark>None</font> - "пустой" объект.
+                    <br>
+                    <font color=dark>and</font> - логическое И.
+                    <br>
+                    <font color=dark>with / as</font> - менеджер контекста.
+                    <br>
+                    <font color=dark>assert</font> условие - возбуждает исключение, если условие ложно.
+                    <br>
+                    <font color=dark>break</font> - выход из цикла.
+                    <br>
+                    <font color=dark>class</font> - пользовательский тип, состоящий из методов и атрибутов.
+                    <br>
+                    <font color=dark>continue</font> - переход на следующую итерацию цикла.
+                    <br>
+                    <font color=dark>def</font> - определение <a href="../teor/lp14.html">функции</a>.
+                    <br>
+                    <font color=dark>del</font> - удаление объекта.
+                    <br>
+                    <font color=dark>elif</font> - в противном случае, если.
+                    <br>
+                    <font color=dark>else</font> - см. <a href="../teor/lp6.html">for/else</a> или <a
+                        href="../teor/lp6.html">if/else</a>.
+                    <br>
+                    <font color=dark>except</font> - перехватить исключение.
+                    <br>
+                    <font color=dark>finally</font> - вкупе с инструкцией try, выполняет инструкции независимо от того,
+                    было ли исключение или
+                    нет.
+                    <br>
+                    <font color=dark>for</font> - цикл for.
+                    <br>
+                    <font color=dark>from</font> - импорт нескольких функций из модуля.
+                    <br>
+                    <font color=dark>global</font> - позволяет сделать значение переменной, присвоенное ей внутри
+                    функции, доступным и за
+                    пределами этой функции.
+                    <br>
+                    <font color=dark>if</font> - <a href="../teor/lp6.html">если</a>.
+                    <br>
+                    <font color=dark>import</font> - импорт модуля.
+                    <br>
+                    <font color=dark>in</font> - проверка на вхождение.
+                    <br>
+                    <font color=dark>is</font> - ссылаются ли 2 объекта на одно и то же место в памяти.
+                    <br>
+                    <font color=dark>lambda</font> - определение анонимной функции.
+                    <br>
+                    <font color=dark>nonlocal</font> - позволяет сделать значение переменной, присвоенное ей внутри
+                    функции, доступным в
+                    объемлющей инструкции.
+                    <br>
+                    <font color=dark>not</font> - логическое НЕ.
+                    <br>
+                    <font color=dark>or</font> - логическое ИЛИ.
+                    <br>
+                    <font color=dark>pass</font> - ничего не делающая конструкция.
+                    <br>
+                    <font color=dark>raise</font> - возбудить исключение.
+                    <br>
+                    <font color=dark>return</font> - вернуть результат.
+                    <br>
+                    <font color=dark>try</font> - выполнить инструкции, перехватывая <a href="../teor/lp15.html">исключения</a>.
+                    <br>
+                    <font color=dark>while</font> - <a href="../teor/lp6.html">цикл</a> while.
+                    <br>
+                    <font color=dark>yield</font> - определение функции-генератора.
+                    </p><br>
+                    <h3>Модуль keyword</h3>
+                    <br>
+                    <p class="info">В общем-то, keyword - не такой уж и модуль, но все же.
+                    <br><br>
+                    <font color=dark>keyword.kwlist</font> - список всех доступных ключевых слов.
+                    <br><br>
+                    <font color=dark>keyword.iskeyword(строка)</font> - является ли строка ключевым словом.
+                    </p>
+                    <br>
+                    <h3>Встроенные функции, выполняющие преобразование типов</h3>
+                    <br>
+                    <p class="info"><font color=dark>bool(x)</font> - преобразование к типу bool, использующая стандартную процедуру <a href="../teor/lp6.html">проверки истинности</a>. Если х
+                    является ложным или опущен, возвращает значение False, в противном случае она возвращает True.
+                    <br><br>
+                    <font color=dark>bytearray</font>([источник [, кодировка [ошибки]]]) - преобразование к <a href="../teor/lp16.html">bytearray</a>. Bytearray - изменяемая
+                    последовательность целых чисел в диапазоне 0≤X&#60 256. Вызванная без аргументов, возвращает пустой
+                    массив байт.
+                    <br><br>
+                    <font color=dark>bytes</font>([источник [, кодировка [ошибки]]]) - возвращает объект типа <a href="../teor/lp16.html">bytes</a>, который является
+                    неизменяемой последовательностью целых чисел в диапазоне 0≤X&#60 256. Аргументы конструктора
+                    интерпретируются как для bytearray().
+                    <br><br>
+                    <font color=dark>complex</font>([real[, imag]]) - преобразование к <a href="../teor/lp8.html">комплексному числу</a>.
+                    <br><br>
+                    <font color=dark>dict([object])</font> - преобразование к <a href="../teor/lp12.html">словарю</a>.
+                    <br><br>
+                    <font color=dark>float</font>([X]) - преобразование к <a href="../teor/lp8.html">числу</a> с плавающей точкой. Если аргумент не указан, возвращается 0.0.
+                    <br><br>
+                    <font color=dark>frozenset</font>([последовательность]) - возвращает <a href="../teor/lp13.html">неизменяемое множество</a>.
+                    <br><br>
+                    <font color=dark>int</font>([object], [основание системы счисления]) - преобразование к <a href="../teor/lp8.html">целому числу</a>.
+                    <br><br>
+                    <font color=dark>list</font>([object]) - создает <a href="../teor/lp9.html">список</a>.
+                    <br><br>
+                    <font color=dark>memoryview</font>([object]) - создает объект memoryview.
+                    <br><br>
+                    <font color=dark>object</font>() - возвращает безликий объект, являющийся базовым для всех объектов.
+                    <br><br>
+                    <font color=dark>range</font>([start=0], stop, [step=1]) - арифметическая прогрессия от start до stop с шагом step.
+                    <br><br>
+                    <font color=dark>set</font>([object]) - создает <a href="../teor/lp13.html">множество</a>.
+                    <br><br>
+                    <font color=dark>slice</font>([start=0], stop, [step=1]) - объект среза от start до stop с шагом step.
+                    <br><br>
+                    <font color=dark>str</font>([object], [кодировка], [ошибки]) - строковое представление объекта. Использует метод __str__.
+                    <br><br>
+                    <font color=dark>tuple</font>(obj) - преобразование к <a href="../teor/lp11.html">кортежу</a>.
+                    </p><br>
+                    <h3>Другие встроенные функции</h3>
+                    <br>
+                    <p class="info"><font color=dark>abs</font>(x) - Возвращает абсолютную величину (модуль числа).
+                    <br><br>
+                    <font color=dark>all</font>(последовательность) - Возвращает True, если все элементы истинные (или, если последовательность
+                    пуста).
+                    <br><br>
+                    <font color=dark>any</font>(последовательность) - Возвращает True, если хотя бы один элемент - истина. Для пустой
+                    последовательности возвращает False.
+                    <br><br>
+                    <font color=dark>ascii</font>(object) - Как repr(), возвращает строку, содержащую представление объекта, но заменяет
+                    не-ASCII символы на экранированные последовательности.
+                    <br><br>
+                    <font color=dark>bin</font>(x) - Преобразование целого числа в двоичную строку.
+                    <br><br>
+                    <font color=dark>callable</font>(x) - Возвращает True для объекта, поддерживающего вызов (как функции).
+                    <br><br>
+                    <font color=dark>chr</font>(x) - Возвращает односимвольную строку, код символа которой равен x.
+                    <br><br>
+                    <font color=dark>classmethod</font>(x) - Представляет указанную функцию методом класса.
+                    <br><br>
+                    <font color=dark>compile</font>(source, filename, mode, flags=0, dont_inherit=False) - Компиляция в программный код, который
+                    впоследствии может выполниться функцией eval или exec. Строка не должна содержать символов возврата
+                    каретки или нулевые байты.
+                    <br><br>
+                    <font color=dark>delattr</font>(object, name) - Удаляет атрибут с именем 'name'.
+                    <br><br>
+                    <font color=dark>dir</font>([object]) - Список имен объекта, а если объект не указан, список имен в текущей локальной
+                    области видимости.
+                    <br><br>
+                    <font color=dark>divmod</font>(a, b) - Возвращает частное и остаток от деления a на b.
+                    <br><br>
+                    <font color=dark>enumerate</font>(iterable, start=0) - Возвращает итератор, при каждом проходе предоставляющем кортеж из
+                    номера и соответствующего члена последовательности.
+                    <br><br>
+                    <font color=dark>eval</font>(expression, globals=None, locals=None) - Выполняет строку программного кода.
+                    <br><br>
+                    <font color=dark>exec</font>(object[, globals[, locals]]) - Выполняет программный код на Python.
+                    <br><br>
+                    <font color=dark>filter</font>(function, iterable) - Возвращает итератор из тех элементов, для которых function возвращает
+                    истину.
+                    <br><br>
+                    <font color=dark>format</font>(value[,format_spec]) - Форматирование (обычно форматирование строки).
+                    <br><br>
+                    <font color=dark>getattr</font>(object, name ,[default]) - извлекает атрибут объекта или default.
+                    <br><br>
+                    <font color=dark>globals</font>() - Словарь глобальных имен.
+                    <br><br>
+                    <font color=dark>hasattr</font>(object, name) - Имеет ли объект атрибут с именем 'name'.
+                    <br><br>
+                    <font color=dark>hash</font>(x) - Возвращает хеш указанного объекта.
+                    <br><br>
+                    <font color=dark>help</font>([object]) - Вызов встроенной справочной системы.
+                    <br><br>
+                    <font color=dark>hex</font>(х) - Преобразование целого числа в шестнадцатеричную строку.
+                    <br><br>
+                    <font color=dark>id</font>(object) - Возвращает "адрес" объекта. Это целое число, которое гарантированно будет уникальным и
+                    постоянным для данного объекта в течение срока его существования.
+                    <br><br>
+                    <font color=dark>input</font>([prompt]) - Возвращает введенную пользователем строку. Prompt - подсказка пользователю.
+                    <br><br>
+                    <font color=dark>isinstance</font>(object, ClassInfo) - Истина, если объект является экземпляром ClassInfo или его
+                    подклассом. Если объект не является объектом данного типа, функция всегда возвращает ложь.
+                    <br><br>
+                    <font color=dark>issubclass</font>(класс, ClassInfo) - Истина, если класс является подклассом ClassInfo. Класс считается
+                    подклассом себя.
+                    <br><br>
+                    <font color=dark>iter</font>(x) - Возвращает объект итератора.
+                    <br><br>
+                    <font color=dark>len</font>(x) - Возвращает число элементов в указанном объекте.
+                    <br><br>
+                    <font color=dark>locals</font>() - Словарь локальных имен.
+                    <br><br>
+                    <font color=dark>map</font>(function, iterator) - Итератор, получившийся после применения к каждому элементу
+                    последовательности функции function.
+                    <br><br>
+                    <font color=dark>max</font>(iter, [args ...] * [, key]) - Максимальный элемент последовательности.
+                    <br><br>
+                    <font color=dark>min</font>(iter, [args ...] * [, key]) - Минимальный элемент последовательности.
+                    <br><br>
+                    <font color=dark>next</font>(x) - Возвращает следующий элемент итератора.
+                    <br><br>
+                    <font color=dark>oct</font>(х) - Преобразование целого числа в восьмеричную строку.
+                    <br><br>
+                    <font color=dark>open</font>(file, mode='r', buffering=None, encoding=None, errors=None, newline=None, closefd=True) -
+                    Открывает файл и возвращает соответствующий поток.
+                    <br><br>
+                    <font color=dark>ord</font>(с) - Код символа.
+                    <br><br>
+                    <font color=dark>pow</font>(x, y[, r]) - ( x ** y ) % r.
+                    <br><br>
+                    <font color=dark>reversed</font>(object) - Итератор из развернутого объекта.
+                    <br><br>
+                    <font color=dark>repr</font>(obj) - Представление объекта.
+                    <br><br>
+                    <font color=dark>print</font>([object, ...], *, sep=" ", end='\n', file=sys.stdout) - Печать.
+                    <br><br>
+                    <font color=dark>property</font>(fget=None, fset=None, fdel=None, doc=None)
+                    <br><br>
+                    <font color=dark>round</font>(X [, N]) - Округление до N знаков после запятой.
+                    <br><br>
+                    <font color=dark>setattr</font>(объект, имя, значение) - Устанавливает атрибут объекта.
+                    <br><br>
+                    <font color=dark>sorted</font>(iterable[, key][, reverse]) - Отсортированный список.
+                    <br><br>
+                    <font color=dark>staticmethod</font>(function) - Статический метод для функции.
+                    <br><br>
+                    <font co</p>lor=dark>sum</font>(iter, start=0) - Сумма членов последовательности.
+                    <br><br>
+                    <font color=dark>super</font>([тип [, объект или тип]]) - Доступ к родительскому классу.
+                    <br><br>
+                    <font color=dark>type</font>(object) - Возвращает тип объекта.
+                    <br><br>
+                    <font color=dark>type</font>(name, bases, dict) - Возвращает новый экземпляр класса name.
+                    <br><br>
+                    <font color=dark>vars</font>([object]) - Словарь из атрибутов объекта. По умолчанию - словарь локальных имен.
+                    <br><br>
+                    <font color=dark>zip</font>(*iters) - Итератор, возвращающий кортежи, состоящие из соответствующих элементов
+                    аргументов-последовательностей.
+                    </p><br>
+                    <h3>Все списки размещены в алфавитном порядке!</h3>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mt-5">
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../java/teor/lj1.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Раздел JavaScript
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/lp6.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Предыдущий урок
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../index.html">
+                    На главную
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/lp8.html">
+                    Следующий урок
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../swift/teor/ls1.html">
+                    Раздел PHP
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+    <a class="btn-top hide" href="#" onclick="return up()" style="position: fixed; bottom: 50px; right: 50px;"><span class="material-icons">
+        arrow_upward
+        </span></a>
+    <footer>
+        <a href="https://metanit.com/" class="btn btn-outline-primary mr-3"> metanit.com</a>
+        <a href="https://learn.javascript.ru/" class="btn btn-outline-primary">learn.javascript.ru</a>
+        <a href="https://vertex-academy.com/" class="btn btn-outline-primary">vertex-academy.com</a>
+    </footer>
+    <script src="../../js/scrollTop18.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

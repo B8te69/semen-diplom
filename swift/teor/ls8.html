@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Язык PHP. Урок №8</title>
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top main-color">
+            <div class="container">
+
+
+                <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/logo.png" /><span
+                        class="hading">B8te: Code</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html"> <i class="material-icons">
+                                    home
+                                </i>Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    menu_book
+                                </i>Языки программирования
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/c/teor/lc1.html">HTML + CSS</a>
+                                <a class="dropdown-item" href="/java/teor/lj1.html">JavaScript</a>
+                                <a class="dropdown-item" href="/python/teor/lp1.html">Python</a>
+                                <a class="dropdown-item" href="/swift/teor/ls1.html">PHP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#">Информация<span class="sr-only">(current)</span></a> -->
+                            <a class="nav-link" href="../../login.html"><i class="material-icons">
+                                    account_box
+                                </i>Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container margin-top-100">
+            <div class="item">
+                <div class="content-l text-l">
+                    <h3 class="text-center"> Язык PHP</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Теория
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../teor/ls1.html">Урок №1. О PHP</a>
+                                    <a class="gg" href="../teor/ls2.html">Урок №2. Синтаксис языка PHP</a>
+                                    <a class="gg" href="../teor/ls3.html">Урок №3. Массивы</a>
+                                    <a class="gg" href="../teor/ls4.html">Урок №4. Циклы</a>
+                                    <a class="gg" href="../teor/ls5.html">Урок №5. Функции</a>
+                                    <a class="gg" href="../teor/ls6.html">Урок №6. База данных</a>
+                                    <a class="gg" href="../teor/ls7.html">Урок №7. Уязвимости</a>
+                                    <a class="gg">Урок №8. Объекты и использование библиотек</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Практика
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse collapsed" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../prac/ps1.html">Тест №1</a>
+                                    <a class="gg" href="../prac/ps2.html">Тест №2</a>
+                                    <a class="gg" href="../prac/ps3.html">Тест №3</a>
+                                    <a class="gg" href="../prac/ps4.html">Тест №4</a>
+                                    <a class="gg" href="../prac/ps5.html">Тест №5</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-l text-r">
+                    <h1 class="">Урок №8. Объекты и классы в PHP</h1>
+                    <br>
+                    <p class="info">
+                        Объекты в PHP — это просто ещё один тип данных. Объект позволяет хранить в переменной набор из
+                        свойств и их значений, а также встроенные функции. Это делает объекты похожими по своей
+                        структуре на ассоциативные массивы. Но отличие от массивов всё-таки есть, и при этом достаточно
+                        важное — объекты могут иметь внутреннее состояние.
+                    </p>
+                    <br><br>
+                    <h3>Особенности объектов и их отличия от массивов</h3>
+                    <p class="info">
+                        Давайте разберёмся, что такое PHP-объект. Как сказано выше, объекты похожи на массивы, но со
+                        своими особенностями. Объекты могут содержать отдельные значения, каждое под своим ключом. Эти
+                        значения называются свойствами объекта.
+                        <br>
+                        Также объекты могут иметь внутри себя функции — их называют методами объекта. Методы могут
+                        обращаться к любым свойствам объекта, читать и записывать туда данные.
+                        <br><br>
+                        Значение свойства объекта может быть любого типа: число, строка, массив, другой объект. Но, в
+                        отличие от массива, объекты не позволяют добавлять в себя новые значения. То есть объект всегда
+                        имеет конечное число своих свойств и методов. Менять значения существующих свойств можно, а
+                        удалять и заменять их — нельзя. Что в корне отличается от поведения массива, ведь там добавлять
+                        и удалять значения можно в любое время.
+                        <br><br>
+                        Но самая большая особенность объектов — это то, как они создаются. Если массив создается либо
+                        пустым, либо сразу с набором значений, то объекты устроены иначе. Дело в том, что объекты не
+                        существуют сами по себе. Чтобы создать новый объект, вам придётся вначале создать его описание —
+                        класс.
+                        <br>
+                        Класс — это как бы чертёж объекта. Класс описывает то, из чего состоит объект. Мы разберёмся с
+                        классами чуть позже.
+                    </p>
+                    <br><br>
+                    <h3>Анатомия объекта</h3>
+                    <p class="info">
+                        Как же устроен объект изнутри? Его содержимое можно поделить на две группы: свойства и методы.
+                        <br>
+                        Свойства могут быть двух видов: публичные и скрытые. К публичным свойствам можно обращаться за
+                        пределами объекта, точно так же, как вы обращаетесь к элементам массива по его ключам.
+                        <br>
+                        Скрытые свойства не имеют аналогов в массиве. Они доступны для чтения и изменения только внутри
+                        самого объекта — и это могут делать его методы.
+                        <br><br>
+                        Вторая группа — это методы объекта.
+                        <br>
+                        Набор методов также называется поведением объекта. Как и свойства, методы бывают публичными и
+                        скрытыми. Публичные методы объекта можно вызывать из внешнего кода, а скрытые только из самого
+                        объекта. Методы способны обращаться к свойствам объекта также просто, как если бы это были их
+                        внутренние переменные или аргументы.
+                    </p>
+                    <br><br>
+                    <h3>Классы</h3>
+                    <p class="info">
+                        Класс — это шаблон, по которому создаются объекты.
+                        <br><br>
+                        Напомню, что классы — это описания объектов. Мы не можем создать объект «на лету», как это
+                        происходит с массивами. Объект может быть создан только на основе своего описания — класса.
+                        Этим, кстати, реализация объектов в PHP отличается от JavaScript. В JS объектам не нужны никакие
+                        классы, и они могут быть созданы и модифицированы когда угодно и как угодно.
+                    </p>
+                    <br><br>
+                    <h3>Класс как чертёж</h3>
+                    <p class="info">
+                        Зачем же нужны классы, и почему объекты не могут существовать без них?
+                        <br><br>
+                        Здесь аналогия очень простая: класс – это чертёж, максимально подробное описание того, как
+                        должно выглядеть изделие. Сам по себе класс не является чем-то физическим и осязаемым, то есть
+                        мы не можем использовать его в коде непосредственно. Вместо этого класс является схемой,
+                        структурой, на основе которой будет создан объект.
+                    </p>
+                    <br><br>
+                    <h3>Жизненный цикл объекта</h3>
+                    <p class="info">
+                        Любая работа с объектами в PHP состоит из следующих этапов.
+                        Начинается всё с создания класса. В классе мы фиксируем из каких свойств и методов будет
+                        состоять каждый его экземпляр. Также в классе можно задать начальные значения для каждого
+                        свойства.
+                        <br>
+                        Имея класс, возможно создать его экземпляр — объект.
+                        <br><br>
+                        Классы в PHP принято сохранять в отдельных файлах, поэтому вначале вы подключаете этот сценарий
+                        там, где он необходим. Затем вызываете процедуру создания нового объекта на основе этого класса.
+                        <br><br>
+                        Чтобы использовать объект в дальнейшем, его следует, как всегда, назначить переменной. Затем вы
+                        будете работать с объектом через переменную: вызывать методы и обращаться к свойствам.
+                    </p>
+                    <h3>Пример создания объекта на основе класса</h3>
+                    <iframe height="1200" style="width: 100%; border-radius: 16px;" scrolling="no" title="class intered"
+                        src="https://codepen.io/B8te/embed/xxqrpGy?height=265&theme-id=dark&default-tab=html,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/xxqrpGy'>class intered</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <h3>Разбор примера</h3>
+                    <p class="info">
+                        Разберёмся с тем, что здесь происходит.
+                        <br>
+                        Начнём с целей создания данного класса. Его задача — хранить в объекте данные о погоде за
+                        конкретный день, а также предоставлять сводку за этот день в текстовом виде.
+                        <br><br>
+                        В классе определено четыре скрытых свойства. Это значит, что к ним не будет доступа за пределами
+                        объекта. Читать и записывать эти свойства могут только внутренние методы объекта. Сами свойства
+                        хранят температурные параметры (температуру, осадки), дату и дополнительный комментарий к
+                        записи. Некоторым свойствам задано значение по умолчанию.
+                        <br><br>
+                        Далее идёт перечисление методов. И начинается всё с метода, у которого особое имя и значение —
+                        __construct.
+                        <br><br>
+                        Что такое конструктор объекта
+                        <br><br>
+                        Методы объекта вызываются из внешнего кода, при явном обращении к ним с указанием имени. Но если
+                        назвать один метод __construct то он будет вызываться автоматически <b>в момент создания объекта на
+                        основе класса.</b>
+                        <br><br>
+                        Конструкторы объектов используются для инициализации каких-либо значений и выполнении других
+                        подготовительных операций. В нашем примере конструктор устанавливает содержимое скрытых свойств.
+                        <br><br>
+                        Обращение к свойствам и методам объекта
+                        <br><br>
+                        Посмотрим, как внутри метода происходит обращение к его свойствам.
+                        <br>
+                        Во-первых, для этого используется специальная переменная this, которая всегда присутствует
+                        внутри объекта и ссылается на него самого.
+                        <br><br>
+                        Во-вторых, для обращения к методам и свойствам объекта нужен специальный синтаксис: «стрелочка».
+                        Такая стрелочка отделяет имя свойства или метода от имени объекта. Это аналог квадратных скобок
+                        при работе с массивами.
+                        <br><br>
+                        Метод с именем isCold() нужен, чтобы узнать было ли холодно в тот день, основываясь на
+                        показаниях температуры в градусах.
+                        <br>
+                        Метод setRainStatus() устанавливает логическое значение, которое показывает статус осадков в
+                        день наблюдения.
+                        <br>
+                        Метод getDayDescription() формирует текстовое описание погоды на заданную дату.
+                        <br><br>
+                        Создание объекта на основе класса
+                        <br><br>
+                        Написав класс, мы выполнили большую часть работы. Теперь нам предстоит создать новый объект на
+                        основе этого класса и показать, как с ним работать.
+                        Новый объект создается с помощью ключевого слова new, после которого идёт имя его класса. В
+                        круглых скобках надо передать все аргументы в метод __construct, если он был написан. Класс не
+                        обязан содержать этот метод, и если его нет, то круглые скобки не обязательны.
+                        <br><br>
+                        В коде мы передаём в конструктор почти все параметры погодных наблюдений. Затем для созданного
+                        объекта вызываются его методы: первый устанавливает значения осадков, а второй возвращает
+                        текстовое описание погоды.
+                    </p>
+                    <h1>
+                        На данном этапе обучение по разделу PHP окончено! Поздравляем! Следующий раздел,
+                        который мы предлагаем - HTML+CSS. Пользователь также может пройти тесты по PHP
+                        навыкам.
+                    </h1>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mt-5">
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center"
+                    href="../../python/teor/lp1.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Раздел Python
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/ls7.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Предыдущий урок
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../index.html">
+                    На главную
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="/swift/prac/ps1.html">
+                    Тесты
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../c/teor/lc1.html">
+                    Раздел HTML+CSS
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <a href="https://metanit.com/" class="btn btn-outline-primary mr-3"> metanit.com</a>
+        <a href="https://learn.javascript.ru/" class="btn btn-outline-primary">learn.javascript.ru</a>
+        <a href="https://vertex-academy.com/" class="btn btn-outline-primary">vertex-academy.com</a>
+    </footer>
+    <a class="up" href="#up">Наверх</a>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS. Урок №7</title>
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .btn-top {
+            padding: 20px;
+            background-color: #e1dcce;
+            border-radius: 100%;
+        }
+
+        .btn-top span {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top main-color">
+            <div class="container">
+
+
+                <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/logo.png" /><span
+                        class="hading">B8te: Code</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html"> <i class="material-icons">
+                                    home
+                                </i>Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    menu_book
+                                </i>Языки программирования
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/c/teor/lc1.html">HTML + CSS</a>
+                                <a class="dropdown-item" href="/java/teor/lj1.html">JavaScript</a>
+                                <a class="dropdown-item" href="/python/teor/lp1.html">Python</a>
+                                <a class="dropdown-item" href="/swift/teor/ls1.html">PHP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#">Информация<span class="sr-only">(current)</span></a> -->
+                            <a class="nav-link" href="../../login.html"><i class="material-icons">
+                                    account_box
+                                </i>Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container margin-top-100">
+            <div class="item">
+                <div class="content-l text-l">
+                    <h3 class="text-center">HTML+CSS</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Теория
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../teor/lc1.html">Урок №1. Что такое HTML?</a>
+                                    <a class="gg" href="../teor/lc2.html">Урок №2. Структура простого HTML-документа</a>
+                                    <a class="gg" href="../teor/lc3.html">Урок №3. Создаём первую HTML-страницу</a>
+                                    <a class="gg" href="../teor/lc4.html">Урок №4. HTML-основы</a>
+                                    <a class="gg" href="../teor/lc5.html">Урок №5. Что такое CSS?</a>
+                                    <a class="gg" href="../teor/lc6.html">Урок №6. Встроенный и внешний CSS</a>
+                                    <a class="gg">Урок №7.CSS Правила и Селекторы</a>
+                                    <a class="gg" href="../teor/lc8.html">Урок №8. Каскадирование и Наследование</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Практика
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse collapsed" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../prac/pc1.html">Тест №1</a>
+                                    <a href="../prac/pc2.html" class="gg">Тест №2</a>
+                                    <a href="../prac/pc3.html" class="gg">Тест №3</a>
+                                    <a href="../prac/pc4.html" class="gg">Тест №4</a>
+                                    <a href="../prac/pc5.html" class="gg">Тест №5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Контроль
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse collapsed" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a href="../kr/kc1.html" class="gg">Задания для выполнения</a>
+                                    <a class="gg" href="../kr/zakl.html">Заключение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-l text-r">
+                    <h1 class="op">Урок №7. CSS правила и Селекторы</h1>
+                    <p class="text-justifyt">
+                        <h3>Синтаксис CSS</h3>
+                        <p class="info">
+                            CSS состоит из правила стиля, которые браузер интерпритирует и затем применяет к
+                            соответствующим элементам в вашем документе.
+                            <br>
+                            Каждое правило имеет три части: <b>селектор</b>, <b>свойство</b> и <b>значение</b>.
+                            <br>
+                            Селектор указывает на элемент HTML, стиль которого пользователь хочет изменить.
+                            <br><br>
+                            Например, цвет селектора может быть определен следующим образом:
+                        </p>
+                        <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="bGqqoEz"
+                            src="https://codepen.io/B8te/embed/bGqqoEz?height=265&theme-id=dark&default-tab=css,result"
+                            frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                            See the Pen <a href='https://codepen.io/B8te/pen/bGqqoEz'>bGqqoEz</a> by B8te
+                            (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                        </iframe>
+                        <br><br>
+                        <img src="/images/selector.jpg" alt="">
+                        <br><br>
+                        <p class="warning">
+                            Блок объявлений содержит одно или несколько объявлений, разделенных точкой с запятой.
+                            <br>
+                            Каждое объявление включает в себя имя свойства и значение, разделенные точкой с запятой.
+                        </p>
+                        <h3>Селекторы по Типу</h3>
+                        <p class="info">
+                            Наиболее общие и легкие для понимания селекторы - это селекторы по типу. Эти селекторы
+                            выделяют типы элемента на странице.
+                            <br><br>
+                            Например, для выделения всех параграфов на странице:
+                        </p>
+                        <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no"
+                            title="p selector css"
+                            src="https://codepen.io/B8te/embed/poeeWNo?height=265&theme-id=dark&default-tab=css,result"
+                            frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                            See the Pen <a href='https://codepen.io/B8te/pen/poeeWNo'>p selector css</a> by B8te
+                            (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                        </iframe>
+                        <br><br>
+                        <p class="warning">
+                            Объявления в CSS всегда заканчиваются точкой с запятой, а группы объявлений объединяются в
+                            фигурные скобки.
+                        </p>
+                        <h3>Селекторы идентификаторов и классов</h3>
+                        <p class="info">
+                            <b>Селекторы идентификаторов</b> позволяют пользователю изменять стиль элемента HTML,
+                            который имеет атрибут <b>id</b>, несмотря на его позицию в дереве документа. Пример
+                            селектора id:
+                        </p>
+                        <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="p intro"
+                            src="https://codepen.io/B8te/embed/QWppqpe?height=265&theme-id=dark&default-tab=html,result"
+                            frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                            See the Pen <a href='https://codepen.io/B8te/pen/QWppqpe'>p intro</a> by B8te
+                            (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                        </iframe>
+                        <br><br>
+                        <p class="warning">
+                            Чтобы выбрать элемент со специфическим id, пользователю необходимо использовать символ
+                            решётки(#), а затем добавить id элемента.
+                        </p>
+                        <p class="info">
+                            <b>Селекторы классов</b> работают похожим образом. Главным различием является то, что в
+                            документе какой-нибудь класс может быть присвоен сразу нескольким элементам, а идентификатор
+                            - только одному.
+                            <br><br>
+                            В нижеуказанном примере на оба параграфа, содержащих класс "first", будет влиять CSS.
+                        </p>
+                        <iframe height="390" style="width: 100%; border-radius: 16px;" scrolling="no"
+                            title="Selector p css change"
+                            src="https://codepen.io/B8te/embed/MWppEEK?height=265&theme-id=dark&default-tab=html,result"
+                            frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                            See the Pen <a href='https://codepen.io/B8te/pen/MWppEEK'>Selector p css change</a> by B8te
+                            (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                        </iframe>
+                        <br><br>
+                        <p class="warning">
+                            Чтобы выбрать элементы специфического класса, пользователю необходимо использовать символ
+                            точки, следом за которым указывается имя класса.
+                            <br>
+                            Пользователю <b>НЕЛЬЗЯ</b> начинать имя класса или идентификатора с числа.
+                        </p>
+                        <h3>Селектор потомков</h3>
+                        <p class="info">
+                            Данные селекторы используются для выбора элементов, которые являются потомками других
+                            элементов. При выборе уровней, пользователь может выбрать столько уровней в глубину, сколько
+                            на то потребуется.
+                            <br><br>
+                            Например, чтобы выбрать только элементы &lt;em> в первом параграфе секций "intro":
+                        </p>
+                        <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="em selector"
+                            src="https://codepen.io/B8te/embed/gOmmGvZ?height=265&theme-id=dark&default-tab=html,result"
+                            frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                            See the Pen <a href='https://codepen.io/B8te/pen/gOmmGvZ'>em selector</a> by B8te
+                            (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                        </iframe>
+                        <br><br>
+                        <p class="warning">
+                            Селектор потомков соответствует всем элементам, являющимся потомками указанного элемента.
+                        </p>
+                    </p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mt-5">
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center"
+                    href="../../swift/teor/ls1.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i>
+                    Раздел PHP
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/lc6.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i>
+                    Предыдущий урок
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../index.html">
+                    На главную
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/lc8.html">
+                    Следующий урок
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../java/teor/lj1.html">
+                    Раздел JavaScript
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+            </div>
+        </div>
+        </div>
+
+    </main>
+    <a class="btn-top hide" href="#" onclick="return up()" style="position: fixed; bottom: 50px; right: 50px;"><span
+            class="material-icons">
+            arrow_upward
+        </span></a>
+    <footer>
+        <a href="https://metanit.com/" class="btn btn-outline-primary mr-3"> metanit.com</a>
+        <a href="https://learn.javascript.ru/" class="btn btn-outline-primary">learn.javascript.ru</a>
+        <a href="https://vertex-academy.com/" class="btn btn-outline-primary">vertex-academy.com</a>
+    </footer>
+    <script src="../../js/scrollTop5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

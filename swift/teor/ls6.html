@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Язык PHP. Урок №6</title>
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top main-color">
+            <div class="container">
+
+
+                <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/logo.png" /><span
+                        class="hading">B8te: Code</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html"> <i class="material-icons">
+                                    home
+                                </i>Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    menu_book
+                                </i>Языки программирования
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/c/teor/lc1.html">HTML + CSS</a>
+                                <a class="dropdown-item" href="/java/teor/lj1.html">JavaScript</a>
+                                <a class="dropdown-item" href="/python/teor/lp1.html">Python</a>
+                                <a class="dropdown-item" href="/swift/teor/ls1.html">PHP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#">Информация<span class="sr-only">(current)</span></a> -->
+                            <a class="nav-link" href="../../login.html"><i class="material-icons">
+                                    account_box
+                                </i>Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container margin-top-100">
+            <div class="item">
+                <div class="content-l text-l">
+                    <h3 class="text-center"> Язык PHP</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Теория
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../teor/ls1.html">Урок №1. О PHP</a>
+                                    <a class="gg" href="../teor/ls2.html">Урок №2. Синтаксис языка PHP</a>
+                                    <a class="gg" href="../teor/ls3.html">Урок №3. Массивы</a>
+                                    <a class="gg" href="../teor/ls4.html">Урок №4. Циклы</a>
+                                    <a class="gg" href="../teor/ls5.html">Урок №5. Функции</a>
+                                    <a class="gg">Урок №6. База данных</a>
+                                    <a class="gg" href="../teor/ls7.html">Урок №7. Уязвимости</a>
+                                    <a class="gg" href="../teor/ls8.html">Урок №8. Объекты и использование библиотек</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Практика
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse collapsed" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../prac/ps1.html">Тест №1</a>
+                                    <a class="gg" href="../prac/ps2.html">Тест №2</a>
+                                    <a class="gg" href="../prac/ps3.html">Тест №3</a>
+                                    <a class="gg" href="../prac/ps4.html">Тест №4</a>
+                                    <a class="gg" href="../prac/ps5.html">Тест №5</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-l text-r">
+                    <h1 class="">Урок №6. База данных. Реалиционная база данных</h1>
+                    <br>
+                    <p class="info">
+                        База данных (БД) — это программа, которая позволяет хранить и обрабатывать информацию в
+                        структурированном виде.
+                        <br>
+                        БД это отдельная независимая программа, которая не входит в состав языка программирования. В
+                        базе данных можно сохранять любую информацию, чтобы позже получать к ней доступ.
+                    </p>
+                    <br><br>
+                    <h3>Пример использования</h3>
+                    <p class="info">
+                        Базы данных нужны для хранения информации. Чтобы получить полное понимание необходимости
+                        использования БД в современном веб-программировании, необходимо ответить на три вопроса:
+                        <br><br>
+                        Какую информацию и зачем мы храним?
+                        <br>
+                        В каком виде и как надо хранить эту информацию?
+                        <br>
+                        Как и каким способом можно получить доступ к этой информации?
+                        <br><br>
+                        Предположим, вы решили сделать сайт, где каждый пользователь может вести личный дневник
+                        наблюдения за погодой в своем городе.
+                        <br>
+                        Такой сайт должен иметь как минимум одну форму ввода со следующими полями: город, дата,
+                        температура, облачность, погодное явление, и так далее.
+                        <br>
+                        Каждый день наблюдатель записывает показания погоды в эту форму, чтобы когда-нибудь в будущем
+                        вернуться на сайт и посмотреть, какая была погода месяц или даже год назад.
+                        <br>
+                        Из этого примера следует, что программист каким-то образом должен сохранять данные из формы для
+                        дальнейшего использования.
+                        <br><br>
+                        Кроме обычного просмотра дневника погоды за месяц в виде таблицы, можно сделать и более сложный
+                        проект.
+                        <br>
+                        Например, чтобы электронный дневник чем-то качественно отличался от своего бумажного аналога,
+                        будет неплохо добавить туда возможности для простого анализа: показать какой день был самым
+                        холодным в ноябре или какой продолжительности была самая длинная серия пасмурных дней.
+                        <br>
+                        Получается, что данные надо не просто как-то хранить, но и иметь возможность их обрабатывать и
+                        анализировать.
+                        <br>
+                        Именно для этих целей и существуют базы данных.
+                    </p>
+                    <br><br>
+                    <h3>Как хранится информация в БД</h3>
+                    <p class="info">
+                        В основе всей структуры хранения лежат три понятия:
+                        <br><br>
+                        База данных;
+                        <br>
+                        Таблица;
+                        <br>
+                        Запись.
+                    </p>
+                    <br><br>
+                    <h3>
+                        База данных
+                    </h3>
+                    <p class="info">
+                        База данных — это высокоуровневное понятие, которое означает объединение совокупности данных,
+                        хранимых для выполнения одной цели.
+                        <br>
+                        Если мы делаем современный сайт, то все его данные будут храниться внутри одной базы данных. Для
+                        сайта онлайн-дневника наблюдений за погодой тоже понадобится создать отдельную базу данных.
+                    </p>
+                    <br><br>
+                    <h3>Таблица</h3>
+                    <p class="info">
+                        По отношению к базе данных таблица является вложенным объеком. То есть одна БД может содержать в
+                        себе множество таблиц.
+                        <br>
+                        Аналогией из реального мира может быть шкаф (база данных) внутри которого лежит множество
+                        коробок (таблиц).
+                        <br>
+                        Таблицы нужны для хранения данных одного типа, например, списка городов, пользователей сайта,
+                        или библиотечного каталога.
+                        <br>
+                        Таблицу можно представить как обычный лист в Excel-таблице, то есть совокупность строк и
+                        столбцов.
+                        <br>
+                        Наверняка каждый хоть раз имел дело с электронными таблицами (MS Excel).
+                        <br>
+                        Заполняя такую таблицу, пользователь определяет столбцы, у каждого из которых есть заголовок. В
+                        строках хранится информация.
+                        <br>
+                        В БД точно также: создавая новую таблицу, необходимо описать, из каких столбцов она состоит, и
+                        дать им имена.
+                    </p>
+                    <br><br>
+                    <h3>Запись</h3>
+                    <p class="info">
+                        Запись — это строка электронной таблицы.
+                        Это неделимая сущность, которая хранится в таблице. Когда мы сохраняем данные веб-формы с сайта,
+                        то на самом деле добавляем новую запись в какую-то из таблиц базы данных. Запись состоит из
+                        полей (столбцов) и их значений. Но значения не могут быть какими угодно.
+                        <br>
+                        Определяя столбец, программист должен указать тип данных, который будет храниться в этом
+                        столбце: текстовый, числовой, логический, файловый и т.д. Это нужно для того, чтобы в будущем в
+                        базу не были записаны данные неверного типа.
+                        <br><br>
+                        Соберем всё вместе, чтобы понять, как будет выглядеть ведение дневника погоды при участии базы
+                        данных.
+                        <br><br>
+                        Создадим для сайта новую БД и дадим ей название «weather_diary».
+                        <br>
+                        Создадим в БД новую таблицу с именем «weather_log» и определим там следующие столбцы:
+                        <br>
+                        Город (тип: текст);
+                        <br>
+                        День (тип: дата);
+                        <br>
+                        Температура (тип: число);
+                        <br>
+                        Облачность (тип: число; от 0 (нет облачности) до 4 (полная облачность));
+                        <br>
+                        Были ли осадки (тип: истина или ложь);
+                        <br>
+                        Комментарий (тип: текст).
+                        <br>
+                        При сохранении формы будем добавлять в таблицу weather_log новую запись, и заполнять в ней все
+                        поля информацией из полей формы.
+                        <br><br>
+                        Теперь можно быть уверенными, что наблюдения наших пользователей не пропадут, и к ним всегда
+                        можно будет получить доступ.
+                    </p>
+                    <br><br>
+                    <h3>Реляционная база данных</h3>
+                    <p class="info">
+                        Английское слово „relation“ можно перевести как связь, отношение.
+                        <br>
+                        А определение «реляционные базы данных» означает, что таблицы в этой БД могут вступать в
+                        отношения и находиться в связи между собой.
+                        <br>
+                        Что это за связи?
+                        <br>
+                        Например, одна таблица может ссылаться на другую таблицу. Это часто требуется, чтобы сократить
+                        объём и избежать дублирования информации.
+                        <br>
+                        В сценарии с дневником погоды пользователь вводит название своего города. Это название
+                        сохраняется вместе с погодными данными.
+                        <br>
+                        Но можно поступить иначе:
+                        <br><br>
+                        Создать новую таблицу с именем „cities“.
+                        Все города в России известны, поэтому их все можно добавить в одну таблицу.
+                        Переделать форму, изменив поле ввода города с текстового на поле типа «select», чтобы
+                        пользователь не вписывал город, а выбирал его из списка.
+                        При сохранении погодной записи, в поле для города поставить ссылку на соответствующую запись из
+                        таблицы городов.
+                        <br><br>
+                        Так мы решим сразу две задачи:
+                        <br><br>
+                        Сократим объём хранимой информации, так как погодные записи больше не будут содержать название
+                        города;
+                        <br>
+                        Избежим дублирования: все пользователи будут выбирать один из заранее определённых городов, что
+                        исключит опечатки.
+                        <br><br>
+                        Связи между таблицами в БД бывают разных видов.
+                        <br>
+                        В примере выше использовалась связь типа «один-ко-многим», так как одному городу может
+                        соответствовать множество погодных записей, но не наоборот!
+                        Бывают связи и других типов: «один-к-одному» и «многие-ко-многим», но они используются
+                        значительно реже.
+                    </p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mt-5">
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center"
+                    href="../../python/teor/lp1.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Раздел Python
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/ls5.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Предыдущий урок
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../index.html">
+                    На главную
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/ls7.html">
+                    Следующий урок
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../c/teor/lc1.html">
+                    Раздел HTML+CSS
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <a href="https://metanit.com/" class="btn btn-outline-primary mr-3"> metanit.com</a>
+        <a href="https://learn.javascript.ru/" class="btn btn-outline-primary">learn.javascript.ru</a>
+        <a href="https://vertex-academy.com/" class="btn btn-outline-primary">vertex-academy.com</a>
+    </footer>
+    <a class="up" href="#up">Наверх</a>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

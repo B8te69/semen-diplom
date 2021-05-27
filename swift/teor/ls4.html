@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Язык PHP. Урок №4</title>
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top main-color">
+            <div class="container">
+
+
+                <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/logo.png" /><span
+                        class="hading">B8te: Code</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html"> <i class="material-icons">
+                                    home
+                                </i>Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    menu_book
+                                </i>Языки программирования
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/c/teor/lc1.html">HTML + CSS</a>
+                                <a class="dropdown-item" href="/java/teor/lj1.html">JavaScript</a>
+                                <a class="dropdown-item" href="/python/teor/lp1.html">Python</a>
+                                <a class="dropdown-item" href="/swift/teor/ls1.html">PHP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#">Информация<span class="sr-only">(current)</span></a> -->
+                            <a class="nav-link" href="../../login.html"><i class="material-icons">
+                                    account_box
+                                </i>Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container margin-top-100">
+            <div class="item">
+                <div class="content-l text-l">
+                    <h3 class="text-center"> Язык Swift</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Теория
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../teor/ls1.html">Урок №1. О PHP</a>
+                                    <a class="gg" href="../teor/ls2.html">Урок №2. Синтаксис языка PHP</a>
+                                    <a class="gg" href="../teor/ls3.html">Урок №3. Массивы</a>
+                                    <a class="gg">Урок №4. Циклы</a>
+                                    <a class="gg" href="../teor/ls5.html">Урок №5. Функции</a>
+                                    <a class="gg" href="../teor/ls6.html">Урок №6. База данных</a>
+                                    <a class="gg" href="../teor/ls7.html">Урок №7. Уязвимости</a>
+                                    <a class="gg" href="../teor/ls8.html">Урок №8. Объекты и использование библиотек</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Практика
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse collapsed" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../prac/ps1.html">Тест №1</a>
+                                    <a class="gg" href="../prac/ps2.html">Тест №2</a>
+                                    <a class="gg" href="../prac/ps3.html">Тест №3</a>
+                                    <a class="gg" href="../prac/ps4.html">Тест №4</a>
+                                    <a class="gg" href="../prac/ps5.html">Тест №5</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-l text-r">
+                    <h1 class="">Урок №4. Циклы в PHP</h1>
+                    <br>
+                    <p class="info">
+                        Цикл — это конструкция языка, которая позволяет выполнить блок кода больше одного раза.
+                        <br><br>
+                        Мы привыкли, что наши сценарии выполняются линейно: сверху вниз, строчка за строчкой, инструкция
+                        за инструкцией. Но что делать, если надо повторить какую-нибудь инструкцию несколько раз?
+                        Например, как вывести на экран натуральные числа от 1 до 9? Есть очевидный способ
+                    </p>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="cicl 1"
+                        src="https://codepen.io/B8te/embed/RwpgZjW?height=265&theme-id=dark&default-tab=html,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/RwpgZjW'>cicl 1</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <p class="info">
+                        Но, во первых, такой способ заставляет писать много кода. Во-вторых, что если требуется вывести
+                        последовательность из миллиона чисел? И, наконец, бывают ситуации, когда заранее неизвестно
+                        сколько раз нужно выполнить определённую инструкцию.
+                        <br><br>
+                        Использование циклов значительно упрощает и укорачивает код. Также циклы незаменимы в ситуациях,
+                        когда заранее неизвестно сколько раз должен выполниться блок кода. Такое число может зависеть от
+                        множества условий и вычисляться в момент выполнения сценария.
+                        <br><br>
+                        Так выглядит цикл в PHP:
+                    </p>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="cicl 2"
+                        src="https://codepen.io/B8te/embed/mdWwBLX?height=265&theme-id=dark&default-tab=html,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/mdWwBLX'>cicl 2</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <p class="info">
+                        В прошлой главе учебника вы познакомились с понятием выражения и его истинностью. Выражения
+                        часто используются в циклах следующим образом: выражение помещается на место <условие цикла="">
+                            и определяет, будет ли исполнен блок кода — &lt;тело цикла="">.
+                            <br><br>
+                            Если выражение из условия цикла возвращает истину, то выполнение сразу перейдёт к блоку
+                            «тело цикла», если же оно вернёт ложь — то тело цикла исполнено не будет и сценарий
+                            продолжит выполняться как обычно, со следующей строки после цикла.
+                            <br><br>
+                            Выходит, что циклы имеют такое название, потому что как бы «зацикливают» обычное,
+                            линейное исполнение на своем блоке кода и не дают сценарию выполняться дальше, пока
+                            условие цикла будет истинным.
+                            <br><br>
+                            Важно понимать последовательность, в которой исполняется код при использовании циклов.
+                            <br><br>
+                            Обычное исполнение кода, строчка за строчкой, пока не встретился цикл.
+                            <br>
+                            Встретился цикл: выполняем условие цикла.
+                            <br>
+                            Если условие вернуло ложь: выходим из цикла, выполняем строчку после него и продолжаем
+                            линейное исполнение.
+                            <br>
+                            Если условие вернуло истину: выполняем всё тело цикла.
+                            <br>
+                            Повторяем пункт 2.
+                            <br><br>
+                            Каждая последовательность из шагов 2-4, то есть очередное выполнение блока кода в теле
+                            цикла — называется итерацией.
+                            <br><br>
+                            Количество итераций должно быть конечным, то есть, как правило, бесконечное выполнение
+                            одного блока кода не входит в наши планы.
+                            А значит необходимо заранее предусмотреть ситуацию, когда истинное условие станет
+                            ложным.
+                            <br><br>
+                            Теперь вернёмся к задаче по выводу на экран всех натуральных чисел:
+                    </p>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="cicl 3"
+                        src="https://codepen.io/B8te/embed/dyvRVjR?height=265&theme-id=dark&default-tab=html,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/dyvRVjR'>cicl 3</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <p class="info">
+                        Данный цикл в своём теле содержит две инструкции. Первая выводит на экран цифру из переменной.
+                        Вторая инструкция увеличивает значение переменной на единицу. Теперь вопрос: сколько раз будет
+                        исполнен такой цикл?
+                        <br><br>
+                        Циклы выполняются, пока их условие остаётся истинным, а в нашем условии значение переменной
+                        должно быть меньше десяти. Так как начальное значение переменной — единица, то не сложно
+                        посчитать, что цикл выполнится ровно девять раз. На десятый раз значение переменной $last_num
+                        станет равно десяти и условие $last_num &lt; 10 перестанет быть истинным.
+                    </p>
+                    <br><br>
+                    <h3>
+                        Циклы и массивы
+                    </h3>
+                    <p class="info">
+                        Чаще всего циклы используются для работы с массивами. А конкретнее — для перечисления всех
+                        элементов массива и выполнения какого-нибудь действия с каждым из этих элементов.
+                        Умение использовать циклы и массивы совместно, сразу позволит тебе выполнять множество
+                        интересных и разнообразных задач!
+                        <br><br>
+                        Чуть раньше мы уже научились работать с массивами. Например, мы можем показать все значения
+                        массива, обратившись к каждому из элементов по его индексу. Но это чрезвычайно утомительно:
+                        обращаться к каждому из элементов массива по очереди, когда мы просто хотим показать всего его
+                        значения. Циклы избавят от этой рутины!
+                        <br><br>
+                        С помощью циклов можно показать содержимое любого массива и это потребует всего несколько строк
+                        кода!
+                        <br><br>
+                        Перепишем пример с выводом списка любимых сериалов, но теперь задействовав цикл:
+                    </p>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="cicl 4"
+                        src="https://codepen.io/B8te/embed/OJpgxoo?height=265&theme-id=dark&default-tab=html,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/OJpgxoo'>cicl 4</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <p class="info">
+                        В этом примере цикл выводит элемент по индексу. Индекс теперь находится в переменной $cur_index
+                        и начальное значение у него ноль. Значение переменной увеличивается на единицу с каждой
+                        итерацией цикла, пока не достигнет трёх. В этот момент условие $cur_index &lt; 3 перестанет быть
+                        истинным и цикл остановится, перебрав весь массив.
+                    </p>
+                    <br><br>
+                    <h3>foreach — специальный цикл для массивов</h3>
+                    <p class="info">
+                        Настало время узнать, что циклы в PHP могут быть разных типов. Выше мы познакомились с циклом
+                        типа while. Главная особенность этого типа в том, что необходимо указывать выражение в его
+                        условии. Но while - это не единственный вид циклов в PHP. Есть ещё как минимум два других.
+                        <br><br>
+                        Массивы и циклы так часто используются вместе, что разработчики языка даже добавили вид цикла
+                        специально для перебора массивов. Он называется foreach. Но что не так с обычным while и зачем
+                        понадобилось придумывать этот foreach?
+                        <br><br>
+                        Дело в том, что цикл while слишком универсален. А платой за эту универсальность всегда будет
+                        более сложный и обьемный код. Приходится придумывать условие, следить, чтобы оно не было
+                        бесконечным. А в теле цикла обязательно надо не забыть увеличивать переменную-счётчик. И всё это
+                        нужно для простого перебора элементов массива. Неужели нельзя сделать проще?
+                        <br><br>
+                        К счастью, foreach решает все эти проблемы. Вот его возможности:
+                        <br><br>
+                        не требуется писать условие;
+                        <br>
+                        позволяет получать ключи массива;
+                        <br>
+                        сам присваивает очередной элемент массива переменной.
+                        <br><br>
+                        Цикл foreach становится совершенно незаменим, когда дело доходит до итерации по ассоциативным
+                        массивам. Возьмём такой пример: у нас есть данные пользователя, которые хранятся в ассоциативном
+                        массиве. На сайте понадобилось сделать страницу с информацией об этом юзере. Задача состоит в
+                        том, чтобы показать на странице все данные, которые известны об этом человеке. Выглядеть это
+                        должно так:
+                        <br><br><b>
+                            Имя: Евгений
+                            Возраст: 27
+                            Род занятий: Программист
+                        </b>
+                        <br><br>
+                        Оригинальный массив, который надо показать в таком виде:
+                    </p>
+                    <iframe height="265" style="width: 100%; border-radius: 16px;" scrolling="no" title="foreach php"
+                        src="https://codepen.io/B8te/embed/ZEeyXVG?height=265&theme-id=dark&default-tab=html,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/B8te/pen/ZEeyXVG'>foreach php</a> by B8te
+                        (<a href='https://codepen.io/B8te'>@B8te</a>) on <a href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                    <br><br>
+                    <p class="info">
+                        На каждой итерации цикла, внутри его тела будут определяться переменные $key и $value. В первую
+                        будет попадать очередной ключ массива, а во вторую — очередное значение по этому ключу.
+                    </p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mt-5">
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center"
+                    href="../../python/teor/lp1.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Раздел Python
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/ls3.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Предыдущий урок
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../index.html">
+                    На главную
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/ls5.html">
+                    Следующий урок
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../c/teor/lc1.html">
+                    Раздел HTML+CSS
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <a href="https://metanit.com/" class="btn btn-outline-primary mr-3"> metanit.com</a>
+        <a href="https://learn.javascript.ru/" class="btn btn-outline-primary">learn.javascript.ru</a>
+        <a href="https://vertex-academy.com/" class="btn btn-outline-primary">vertex-academy.com</a>
+    </footer>
+    <a class="up" href="#up">Наверх</a>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

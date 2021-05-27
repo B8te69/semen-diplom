@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Язык Python. Урок №8</title>
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .hide {
+            display: none;
+        }
+        
+        .show {
+            display: block;
+        }
+        
+        .btn-top {
+            padding: 20px;
+            background-color: #e1dcce;
+            border-radius: 100%;
+        }
+        
+        .btn-top span {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top main-color">
+            <div class="container">
+
+
+                <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/logo.png" /><span
+                        class="hading">B8te: Code</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html"> <i class="material-icons">
+                                    home
+                                </i>Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    menu_book
+                                </i>Языки программирования
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/c/teor/lc1.html">HTML + CSS</a>
+                                <a class="dropdown-item" href="/java/teor/lj1.html">JavaScript</a>
+                                <a class="dropdown-item" href="/python/teor/lp1.html">Python</a>
+                                <a class="dropdown-item" href="/swift/teor/ls1.html">PHP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#">Информация<span class="sr-only">(current)</span></a> -->
+                            <a class="nav-link" href="../../login.html"><i class="material-icons">
+                                    account_box
+                                </i>Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container margin-top-100">
+            <div class="item">
+                <div class="content-l text-l">
+                    <h3 class="text-center"> Язык Python</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Теория
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="lp1.html">Урок №1. Возможности языка Python</a>
+                                    <a class="gg" href="lp2.html">Урок №2. Загрузка и установка Python</a>
+                                    <a class="gg" href="lp3.html">Урок №3. Первая программа</a>
+                                    <a class="gg" href="lp4.html">Урок №4. Синтаксис</a>
+                                    <a class="gg" href="lp5.html">Урок №5. Оператор if</a>
+                                    <a class="gg" href="lp6.html">Урок №6. Циклы</a>
+                                    <a class="gg" href="lp7.html">Урок №7. Ключевые слова, встроенные функции</a>
+                                    <a class="gg">Урок №8. Числа</a>
+                                    <a class="gg" href="lp9.html">Урок №9. Массивы</a>
+                                    <a class="gg" href="lp10.html">Урок №10. Индексы и срезы</a>
+                                    <a class="gg" href="lp11.html">Урок №11. Кортежи</a>
+                                    <a class="gg" href="lp12.html">Урок №12. Словари</a>
+                                    <a class="gg" href="lp13.html">Урок №13. Множества</a>
+                                    <a class="gg" href="lp14.html">Урок №14. Функции</a>
+                                    <a class="gg" href="lp15.html">Урок №15. Исключения и их обработка</a>
+                                    <a class="gg" href="lp16.html">Урок №16. Байтовые строки</a>
+                                    <a class="gg" href="lp17.html">Урок №17. Файлы</a>
+                                    <a class="gg" href="lp18.html">Урок №18. Документирование кода</a>
+                                    <a class="gg" href="lp19.html">Урок №19. Создание и подключение модулей</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Практика
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse collapsed" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../prac/pp1.html">Тест №1</a>
+                                    <a class="gg" href="../prac/pp2.html">Тест №2</a>
+                                    <a class="gg" href="../prac/pp3.html">Тест №3</a>
+                                    <a class="gg" href="../prac/pp4.html">Тест №4</a>
+                                    <a class="gg" href="../prac/pp5.html">Тест №5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Контроль
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse collapsed" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <a class="gg" href="../kr/kp.html">Контрольная работа №1</a>
+                                    <a class="gg" href="../kr/kp2.html">Контрольная работа №2</a>
+                                    <a class="gg" href="../kr/zakl_python.html">Заключение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-l text-r">
+                    <h1 class="">Урок №8. Числа: целые, вещественные, комплексные
+                    </h1>
+                    <br><br>
+                    <h3>Целые числа (int)</h3>
+                    <br>
+                    <p class="info">Числа в Python 3 ничем не отличаются от обычных чисел. Они поддерживают набор самых обычных
+                    математических операций:
+                    </p><br>
+                    <img src="../img/screen12.jpg" alt="">
+                    <br><br>
+                    <p class="info">Также нужно отметить, что целые числа в python 3, в отличие от многих других языков, поддерживают
+                    длинную арифметику (однако, это требует больше памяти).
+                    <br><br>
+                        >>> 255 + 34
+                        <br>
+                        289
+                        <br>
+                        >>> 5 * 2
+                        <br>
+                        10
+                        <br>
+                        >>> 20 / 3
+                        <br>
+                        6.666666666666667
+                        <br>
+                        >>> 20 // 3
+                        <br>
+                        6
+                        <br>
+                        >>> 20 % 3
+                        <br>
+                        2
+                        <br>
+                        >>> 3 ** 4
+                        <br>
+                        81
+                        <br>
+                        >>> pow(3, 4)
+                        <br>
+                        81
+                        <br>
+                        >>> pow(3, 4, 27)
+                        <br>
+                        0
+                        <br>
+                        >>> 3 ** 150
+                        <br>
+                        369988485035126972924700782451696644186473100389722973815184405301748249
+                    </p>
+                    <br>
+                    <h3>Битовые операции</h3>
+                    <br>
+                    <p class="info">Над целыми числами также можно производить битовые операции.</p>
+                    <br>
+                    <img src="../img/screen13.jpg" alt="">
+                    <br><br>
+                    <h3>Дополнительные методы</h3>
+                    <br>
+                    <p class="info"><font color=dark>int.bit_length()</font> - количество бит, необходимых для представления числа в двоичном виде, без учёта
+                    знака и лидирующих нулей.
+                    <br><br>
+                    
+                    >>> n = -37
+                    <br>
+                    >>> bin(n)
+                    <br>
+                    '-0b100101'
+                    <br>
+                    >>> n.bit_length()
+                    <br>
+                    6
+                    
+                    <br>
+                    <font color=dark>int.to_bytes</font>(length, byteorder, *, signed=False) - возвращает <a href="../teor/lp16.html">строку байтов</a>, представляющих это
+                    число.
+                    <br><br>
+                   
+                    >>> (1024).to_bytes(2, byteorder='big')
+                    <br>
+                    b'\x04\x00'
+                    <br>
+                    >>> (1024).to_bytes(10, byteorder='big')
+                    <br>
+                    b'\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00'
+                    <br>
+                    >>> (-1024).to_bytes(10, byteorder='big', signed=True)
+                    <br>
+                    b'\xff\xff\xff\xff\xff\xff\xff\xff\xfc\x00'
+                    <br>
+                    >>> x = 1000
+                    <br>
+                    >>> x.to_bytes((x.bit_length() // 8) + 1, byteorder='little')
+                    <br>
+                    b'\xe8\x03'
+                    
+                    <br>
+                    classmethod <font color=dark>int.from_bytes</font>(bytes, byteorder, *, signed=False) - возвращает число из данной строки
+                    байтов.
+                    <br><br>
+                    
+                    >>> int.from_bytes(b'\x00\x10', byteorder='big')
+                    <br>
+                    16
+                    <br>
+                    >>> int.from_bytes(b'\x00\x10', byteorder='little')
+                    <br>
+                    4096
+                    <br>
+                    >>> int.from_bytes(b'\xfc\x00', byteorder='big', signed=True)
+                    <br>
+                    -1024
+                    <br>
+                    >>> int.from_bytes(b'\xfc\x00', byteorder='big', signed=False)
+                    <br>
+                    64512
+                    <br>
+                    >>> int.from_bytes([255, 0, 0], byteorder='big')
+                    <br>
+                    16711680
+                    </p>
+                    <br><br>
+                    <h3>Системы счисления</h3>
+                    <br>
+                    <p class="info">Те, у кого в школе была информатика, знают, что числа могут быть представлены не только в десятичной
+                    системе счисления. К примеру, в компьютере используется двоичный код, и, к примеру, число 19 в
+                    двоичной системе счисления будет выглядеть как 10011. Также иногда нужно переводить числа из одной
+                    системы счисления в другую. Python для этого предоставляет несколько функций:
+                    <br><br>
+                    <b><font color=purple>
+                    int([object], [основание системы счисления]) - преобразование к целому числу в десятичной системе
+                    счисления. По умолчанию система счисления десятичная, но можно задать любое основание от 2 до 36
+                    включительно.
+                    <br><br>
+                    bin(x) - преобразование целого числа в двоичную строку.
+                    <br><br>
+                    hex(х) - преобразование целого числа в шестнадцатеричную строку.
+                    <br><br>
+                    oct(х) - преобразование целого числа в восьмеричную строку.
+                    </font></b>
+                    <br><br>
+                    Примеры:
+                    <br><br>
+                    
+                    >>> a = int('19') <em><font color=50c878># Переводим строку в число</font></em>
+                    <br>
+                    >>> b = int('19.5') <em><font color=50c878># Строка не является целым числом</font></em>
+                    <br>
+                    Traceback (most recent call last):
+                    <br>
+                    File "", line 1, in
+                    <br>
+                    ValueError: invalid literal for int() with base 10: '19.5'
+                    <br>
+                    >>> c = int(19.5) <em><font color=50c878># Применённая к числу с плавающей точкой, отсекает дробную часть</font></em>
+                    <br>
+                    >>> print(a, c)
+                    <br>
+                    19 19
+                    <br>
+                    >>> bin(19)
+                    <br>
+                    '0b10011'
+                    <br>
+                    >>> oct(19)
+                    <br>
+                    '0o23'
+                    <br>
+                    >>> hex(19)
+                    <br>
+                    '0x13'
+                    <br>
+                    >>> 0b10011 <em><font color=50c878># Так тоже можно записывать числовые константы</font></em>
+                    <br>
+                    19
+                    <br>
+                    >>> int('10011', 2)
+                    <br>
+                    19
+                    <br>
+                    >>> int('0b10011', 2)
+                    <br>
+                    19
+                    </p>
+                    <br><br>
+                    <h3>Вещественные числа (float)</h3>
+                    <br>
+                    <p class="info">Вещественные числа поддерживают те же операции, что и целые. Однако (из-за представления чисел в
+                    компьютере) вещественные числа неточны, и это может привести к ошибкам:
+                    <br><br>
+                    
+                    >>> 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1
+                    <br>
+                    0.9999999999999999
+                    
+                    <br>
+                    Для высокой точности используют другие объекты (например Decimal и Fraction)).
+                    <br><br>
+                    Также вещественные числа не поддерживают длинную арифметику:
+                    <br><br>
+                    
+                    >>> a = 3 ** 1000
+                    >>> a + 0.1
+                    Traceback (most recent call last):
+                    File "", line 1, in
+                    OverflowError: int too large to convert to float
+                    
+                    <br>
+                    Простенькие примеры работы с числами:
+                    <br><br>
+                    
+                    >>> c = 150
+                    <br>
+                    >>> d = 12.9
+                    <br>
+                    >>> c + d
+                    <br>
+                    162.9
+                    <br>
+                    >>> p = abs(d - c) <em><font color=50c878># Модуль числа</font></em>
+                    <br>
+                    >>> print(p)
+                    <br>
+                    137.1
+                    <br>
+                    >>> round(p) <em><font color=50c878># Округление</font></em>
+                    <br>
+                    137
+                    </p>
+                    <br><br>
+                    <h3>Дополнительные методы</h3>
+                    <br>
+                    <p class="info"><font color=dark>float.as_integer_ratio()</font> - пара целых чисел, чьё отношение равно этому числу.
+                    <br><br>
+                    <font color=dark>float.is_integer()</font> - является ли значение целым числом.
+                    <br><br>
+                    <font color=dark>float.hex()</font> - переводит float в hex (шестнадцатеричную систему счисления).
+                    <br><br>
+                    classmethod <font color=dark>float.fromhex</font>(s) - float из шестнадцатеричной строки.
+                    <br><br>
+                    
+                    >>> (10.5).hex()
+                    <br>
+                    '0x1.5000000000000p+3'
+                    <br>
+                    >>> float.fromhex('0x1.5000000000000p+3')
+                    <br>
+                    10.5
+                    <br>
+                    <br>
+                    Помимо стандартных выражений для работы с числами (а в Python их не так уж и много), в составе
+                    Python есть несколько полезных модулей.
+                    <br><br>
+                    Модуль math предоставляет более сложные математические функции.
+                    <br><br>
+                    
+                    >>> import math
+                    <br>
+                    >>> math.pi
+                    <br>
+                    3.141592653589793
+                    <br>
+                    >>> math.sqrt(85)
+                    <br>
+                    9.219544457292887
+                    <br>
+                    <br>
+                    Модуль random реализует генератор случайных чисел и функции случайного выбора.
+                    <br><br>
+                    
+                    >>> import random
+                    <br>
+                    >>> random.random()
+                    <br>
+                    0.15651968855132303
+                    </p>
+                    <br><br>
+                    <h3>Комплексные числа (complex)</h3>
+                    <br>
+                    <p class="info">В Python встроены также и комплексные числа:
+                    <br><br>
+                    
+                    >>> x = complex(1, 2)
+                    <br>
+                    >>> print(x)
+                    <br>
+                    (1+2j)
+                    <br>
+                    >>> y = complex(3, 4)
+                    <br>
+                    >>> print(y)
+                    <br>
+                    (3+4j)
+                    <br>
+                    >>> z = x + y
+                    <br>
+                    >>> print(x)
+                    <br>
+                    (1+2j)
+                    <br>
+                    >>> print(z)
+                    <br>
+                    (4+6j)
+                    <br>
+                    >>> z = x * y
+                    <br>
+                    >>> print(z)
+                    <br>
+                    (-5+10j)
+                    <br>
+                    >>> z = x / y
+                    <br>
+                    >>> print(z)
+                    <br>
+                    (0.44+0.08j)
+                    <br>
+                    >>> print(x.conjugate()) <em><font color=50c878># Сопряжённое число</font></em>
+                    <br>
+                    (1-2j)
+                    <br>
+                    >>> print(x.imag) <em><font color=50c878># Мнимая часть</font></em>
+                    <br>
+                    2.0
+                    <br>
+                    >>> print(x.real) <em><font color=50c878># Действительная часть</font></em>
+                    <br>
+                    1.0
+                    <br>
+                    >>> print(x > y) <em><font color=50c878># Комплексные числа нельзя сравнить</font></em>
+                    <br>
+                    Traceback (most recent call last):
+                    <br>
+                    File "", line 1, in
+                    <br>
+                    TypeError: unorderable types: complex() > complex()
+                    <br>
+                    >>> print(x == y) <em><font color=50c878># Но можно проверить на равенство</font></em>
+                    <br>
+                    False
+                    <br>
+                    >>> abs(3 + 4j) <em><font color=50c878># Модуль комплексного числа</font></em>
+                    <br>
+                    5.0
+                    <br>
+                    >>> pow(3 + 4j, 2) <em><font color=50c878># Возведение в степень</font></em>
+                    <br>
+                    (-7+24j)
+                    <br>
+                    <br>
+                    Также для работы с комплексными числами используется также модуль <font color=dark>cmath</font>.</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mt-5">
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../java/teor/lj1.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Раздел JavaScript
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/lp7.html">
+                    <i class="material-icons">
+                        arrow_back
+                    </i> Предыдущий урок
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../index.html">
+                    На главную
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../teor/lp9.html">
+                    Следующий урок
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+                <a class="col-1 col-sm-2 btn btn-primary d-flex justify-content-center" href="../../swift/teor/ls1.html">
+                    Раздел PHP
+                    <i class="material-icons">
+                        arrow_forward
+                    </i>
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+    <a class="btn-top hide" href="#" onclick="return up()" style="position: fixed; bottom: 50px; right: 50px;"><span class="material-icons">
+        arrow_upward
+        </span></a>
+    <footer>
+        <a href="https://metanit.com/" class="btn btn-outline-primary mr-3"> metanit.com</a>
+        <a href="https://learn.javascript.ru/" class="btn btn-outline-primary">learn.javascript.ru</a>
+        <a href="https://vertex-academy.com/" class="btn btn-outline-primary">vertex-academy.com</a>
+    </footer>
+    <script src="../../js/scrollTop19.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
