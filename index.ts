@@ -1,1 +1,1 @@
-console.log('spat hochy')
+console.log('spat hoc1)
